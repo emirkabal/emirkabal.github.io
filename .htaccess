@@ -1,0 +1,21 @@
+Options -Indexes
+RewriteEngine On
+ErrorDocument 403 /index.html
+ErrorDocument 404 /404.html
+
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [L,NE,R=301]
+RewriteCond %{HTTP_REFERER} !^http://emirkabal.xyz/pub/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://emirkabal.xyz/pub$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://emirkabal.xyz/pub/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://emirkabal.xyz/pub$      [NC]
+RewriteRule .*\.()$ https://emirkabal.xyz [R,NC]
+
+RewriteCond %{HTTP_HOST} ^emirkabal.xyz
+RewriteRule ^api/(.*)$ http://api.emirkabal.xyz/ [L,R=301]
+RewriteCond %{HTTP_HOST} ^emirkabal.xyz
+RewriteRule ^akari/(.*)$ http://akari.emirkabal.xyz/ [L,R=301]
+RewriteCond %{HTTP_HOST} ^emirkabal.xyz
+RewriteRule ^kabalbot/(.*)$ http://kabalbot.emirkabal.xyz/ [L,R=301]
