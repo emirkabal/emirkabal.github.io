@@ -16,6 +16,6 @@ RewriteRule .*\.()$ https://emirkabal.xyz [R,NC]
 RewriteCond %{HTTP_HOST} ^emirkabal.xyz
 RewriteRule ^api/(.*)$ http://api.emirkabal.xyz/ [L,R=301]
 RewriteCond %{HTTP_HOST} ^emirkabal.xyz
-RewriteRule ^akari/(.*)$ http://akaribot.emirkabal.xyz/ [L,R=301]
+RewriteRule ^akaribot/(.*)$ http://akaribot.emirkabal.xyz/ [L,R=301]
 RewriteCond %{HTTP_HOST} ^emirkabal.xyz
 RewriteRule ^kabalbot/(.*)$ http://kabalbot.emirkabal.xyz/ [L,R=301]
