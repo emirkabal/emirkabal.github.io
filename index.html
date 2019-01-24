@@ -34,6 +34,7 @@
   <!-- JavaScript -->
   <script src="https://emirkabal.xyz/pub/assets/js/smoothscroll.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="https://emirkabal.xyz/pub/assets/js/main.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <!-- Custom Style -->
   <style>.one-full.column p,.one-full.column h1 {margin: 0;}</style>
@@ -48,11 +49,10 @@
         <h1 class="title">Emir Kabal</h1>
       </section>
       <div class="buttons">
-        <a href="https://discord.gg/HyUnvQs" class="btn discord animation hover"><i class="fab fa-discord"></i> Discord</a>
-        <a href="https://github.com/EmirKabal" class="btn github animation hover"><i class="fab fa-github"></i> GitHub</a>
-        <a href="https://api.emirkabal.xyz/" class="btn animation hover asbestos"><i class="fa fa-book"></i> API</a>
-        <a href="https://bot.emirkabal.xyz/" class="btn animation hover peter-river"><i class="fas fa-robot"></i>
-          Kabal's</a>
+        
+        <a href="https://emirkabal.xyz/blog" class="btn animation hover sun-flower"><i class="fab fa-blogger-b"></i> Blog</a>
+        <a href="https://api.emirkabal.xyz" class="btn animation hover asbestos"><i class="fa fa-book"></i> API</a>
+        <a href="https://bot.emirkabal.xyz" class="btn animation hover peter-river"><i class="fas fa-robot"></i> Kabal's</a>
       </div>
     </div>
     <a href="#bilgilendirme">
@@ -78,12 +78,14 @@
 
     <div class="box-container row">
       <div class="one-full column">
-        <h1 class="emerald-text"><i class="emoji blobcatnomdisk"></i> Sosyal medya hesaplarım:</h1>
+        <h1 class="emerald-text"><i class="emoji blobcatnomdisk"></i> Sosyal ağlar:</h1>
       </div>
       <div class="one-full column">
-        <a href="https://steamcommunity.com/id/EmirKabal" class="btn black-flat" target="_blank">Steam</a>
-        <a href="https://twitter.com/EmirKabal" class="btn twitter-flat" target="_blank">Twitter</a>
-        <a href="https://youtube.com/channel/UCnk1twa5I7ZvsnPl-pnQ9qA" class=" btn youtube-flat" target="_blank">YouTube</a>
+        <a onclick="getTag();" class="btn discord-flat"><i class="fab fa-discord"></i> Discord</a>
+        <a href="https://github.com/EmirKabal" class="btn github-flat"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://steamcommunity.com/id/EmirKabal" class="btn black-flat" target="_blank"><i class="fab fa-steam"></i> Steam</a>
+        <a href="https://twitter.com/EmirKabal" class="btn twitter-flat" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="https://youtube.com/channel/UCnk1twa5I7ZvsnPl-pnQ9qA" class=" btn youtube-flat" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
       </div>
     </div>
 
@@ -101,8 +103,15 @@
       </div>
     </div>
   </section>
-
-
+  
+  <script>
+    function getTag(){
+      $.getJSON("https://api.emirkabal.xyz/author", function (data) {
+        if(!data || !data.discord) return alert("Kabal#1881");
+        return alert(data.discord);
+      });
+    }
+  </script>
 
 </body>
 
