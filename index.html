@@ -51,7 +51,7 @@
       <div class="buttons">
         
         <a href="https://emirkabal.xyz/blog" class="btn animation hover sun-flower"><i class="fab fa-blogger-b"></i> Blog</a>
-        <a href="https://api.emirkabal.xyz" class="btn animation hover asbestos"><i class="fa fa-book"></i> API</a>
+        <a href="https://bot.emirkabal.xyz/api" class="btn animation hover asbestos"><i class="fa fa-book"></i> API</a>
         <a href="https://bot.emirkabal.xyz" class="btn animation hover peter-river"><i class="fas fa-robot"></i> Kabal's</a>
       </div>
     </div>
@@ -107,8 +107,8 @@
   
   <script>
     function getTag(){
-      $.getJSON("https://api.emirkabal.xyz/author", function (data) {
-        if(!data || !data.discord) return alert("Kabal#1881");
+      $.getJSON("https://bot.emirkabal.xyz/api/author", function (data) {
+        if(!data || !data.discord) return alert("Kabal#3345");
         return alert(data.discord);
       });
     }
