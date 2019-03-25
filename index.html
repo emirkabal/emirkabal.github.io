@@ -26,16 +26,10 @@
   <meta name="twitter:site" content="@EmirKabal" />
 
   <!-- CSS - Modesta Thanks for AlexFlipnote(https://alexflipnote.xyz) -->
-  <link href="https://modesta.alexflipnote.xyz/css/modesta.min.css" type="text/css" rel="stylesheet">
-  <link href="https://modesta.alexflipnote.xyz/css/blobcat.min.css" type="text/css" rel="stylesheet">
+  <link href="https://modesta.alexflipnote.dev/css/modesta.min.css" type="text/css" rel="stylesheet">
+  <link href="https://modesta.alexflipnote.dev/css/blobcat.min.css" type="text/css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
     crossorigin="anonymous">
-
-  <!-- JavaScript -->
-  <script src="https://emirkabal.xyz/pub/assets/js/smoothscroll.min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="https://emirkabal.xyz/pub/assets/js/main.js" type="text/javascript" charset="utf-8"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
   <!-- Custom Style -->
   <style>.one-full.column p,.one-full.column h1 {margin: 0;}</style>
 </head>
@@ -45,8 +39,12 @@
     <div class="background" style="background-image: url(&#39;pub/assets/images/background.jpg&#39;);"></div>
     <div class="center-object">
       <section class="me unset">
-        <img draggable="false" src="https://emirkabal.xyz/pub/assets/images/profile.png" class="image-title">
-        <h1 class="title">Emir Kabal</h1>
+        <img draggable="false" src="pub/assets/images/profile.png" class="image-title">
+        <h1 class="title">
+          <span class="bold">Emir Kabal</span>
+          <br>
+          <span class="undertitle"><span id="desc"></span></span>
+        </h1>
       </section>
       <div class="buttons">
         
@@ -110,14 +108,31 @@
       <a href="https://status.emirkabal.xyz/" target="_blank">Servisler</a>
     </p>
   </footer>
-  
+
+  <!-- JavaScript -->
+  <script src="https://emirkabal.xyz/pub/assets/js/smoothscroll.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://emirkabal.xyz/pub/assets/js/main.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
-    function getTag(){
+    //anim text
+    var strings = ["Kişisel web sayfama hoşgeldin!", "C#", "Java", "JavaScript", "HTML"];
+    var typed = new Typed('#desc', {
+      strings: strings,
+      smartBackspace: true,
+      loop: true,
+      cursorChar: " _",
+      backSpeed: 10,
+      typeSpeed: 30
+    });
+    //discord button
+    function getTag() {
       $.getJSON("https://bot.emirkabal.xyz/api/author", function (data) {
-        if(!data || !data.discord) return alert("Kabal#3345");
+        if (!data || !data.discord) return alert("Kabal#3345");
         return alert(data.discord);
       });
     }
+
   </script>
 
 </body>
