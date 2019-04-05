@@ -3,9 +3,17 @@ baseurl: ""
 url: "https://emirkabal.xyz"
 encoding: utf-8
 
-include: ['_pages']
+include:
+  - _pages
 
-collections:
-  pages:
-    output: true
-    permalink: /:path/
+markdown: kramdown
+
+kramdown:
+  auto_ids:       true
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  input:          GFM
+  hard_wrap:      false
+  footnote_nr:    1
+  show_warnings:  false
