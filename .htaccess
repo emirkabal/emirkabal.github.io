@@ -12,3 +12,6 @@ RewriteCond %{HTTP_REFERER} !^http://emirkabal.xyz/pub$      [NC]
 RewriteCond %{HTTP_REFERER} !^https://emirkabal.xyz/pub/.*$      [NC]
 RewriteCond %{HTTP_REFERER} !^https://emirkabal.xyz/pub$      [NC]
 RewriteRule .*\.()$ https://emirkabal.xyz [R,NC]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
