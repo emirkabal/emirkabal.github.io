@@ -61,7 +61,7 @@
         <h1 class="title">
           <span class="bold">Emir Kabal</span>
           <br>
-          <span class="undertitle"><span id="desc"></span></span>
+          <span class="undertitle">Web sayfama hoşgeldin!</span>
         </h1>
       </section>
       <div class="buttons">
@@ -87,7 +87,7 @@
           olarak tanınıyorum.
           Kısacası ben bir yazılımcıyım ve kendimce bazı internet siteleri ve programlar yapıyorum
           ve yaklaşık <span class="sun-flower-text">3 yıl</span>a yakın bir süredir bu işlerle uğraşıyorum.
-          Üzerinde yeterince iyi olduğum bazı yazılım dilleri: <span class="emerald-text">C#, JavaScript, HTML, CSS</span>
+          Üzerinde yeterince iyi olduğum bazı programlama/yazılım dilleri: <span class="emerald-text">C#, JavaScript, HTML, CSS</span>
         </p>
       </div>
     </div>
@@ -101,8 +101,8 @@
         <a href="https://github.com/EmirKabal" class="btn github-flat" target="_blank"><i class="fab fa-github"></i> GitHub</a>
         <a href="https://steamcommunity.com/id/EmirKabal" class="btn black-flat" target="_blank"><i class="fab fa-steam"></i> Steam</a>
         <a href="https://twitter.com/EmirKabal" class="btn twitter-flat" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-        <a href="https://youtube.com/channel/UCnk1twa5I7ZvsnPl-pnQ9qA" class=" btn youtube-flat" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
-        <a href="mailto:me@emirkabal.com" class=" btn wisteria-flat"><i class="fas fa-envelope"></i> Email</a>        
+        <a href="https://www.youtube.com/c/EmirKaball" class=" btn youtube-flat" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+        <a href="mailto:kabalemir@gmail.com" class=" btn wisteria-flat"><i class="fas fa-envelope"></i> Email</a>        
       </div>
     </div>
 
@@ -113,9 +113,9 @@
       <div class="one-full column">
         <p><a href="https://bot.emirkabal.com/" target="_blank">Kabal's Bot</a>, Discord için geliştirilen müzik,
           eğlence ve moderasyon botu.</p>
-        <p><a href="https://www.npmjs.com/package/tcmb-doviz" target="_blank">tcmb-doviz</a>, Türkiye Cumhuriyet Merkez Bankasını kullanarak dövizleri size haberdar eden bir npm modülü..</p>
         <p><a href="https://doviz.emirkabal.com" target="_blank">DovizGUI</a>, Türkiye'nin mevcut döviz
           kurlarını güncel olarak gösteren bir site.</p>
+        <p><a href="https://www.npmjs.com/package/tcmb-doviz" target="_blank">tcmb-doviz</a>, Türkiye Cumhuriyet Merkez Bankasını kullanarak dövizleri size haberdar eden bir npm modülü..</p>
         <p><a href="https://github.com/emirkabal/lol-api" target="_blank">lol-api</a>, League of Legends adlı oyunun
           istatistiklerine bağlı olarak çalışan bir NodeJS applikasyonu.</p>
       </div>
@@ -135,16 +135,6 @@
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
-    //anim text
-    var strings = ["Kişisel web sayfama hoşgeldin!", "C#", "Java", "JavaScript", "HTML"];
-    var typed = new Typed('#desc', {
-      strings: strings,
-      smartBackspace: true,
-      loop: true,
-      cursorChar: " _",
-      backSpeed: 10,
-      typeSpeed: 30
-    });
     //discord button
     function getTag() {
       $.getJSON("https://api.emirkabal.com/author", function (data) {
@@ -152,7 +142,6 @@
         return alert(data.discord);
       });
     }
-
   </script>
 
 </body>
