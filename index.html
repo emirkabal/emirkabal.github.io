@@ -50,10 +50,30 @@
     gtag('config', 'UA-144173986-1');
   </script>
 
+  <style>
+    .modal {
+      display: none;
+    }
+    .modal-content {
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+    }
+  </style>
 
 </head>
 
 <body>
+  <div id="cheat1" class="modal">
+    <div class="modal-content">
+      <center>
+        <video id="dervis" src="https://cdn.discordapp.com/attachments/649655949560381450/650720508098117635/Dervis-1.mp4"
+          type="video/mp4"></video>
+      </center>
+    </div>
+  
+  </div>
+
   <div class="fullscreen">
     <div class="background" style="background-image: url(&#39;https://emirkabal.com/pub/assets/images/background.jpg&#39;);"></div>
     <div class="center-object">
@@ -143,6 +163,30 @@
         return alert(data.discord);
       });
     }
+  </script>
+  <script type="text/javascript">
+    let keyList = [];
+
+    $(document).ready(function () {
+      $('#dervis').on('ended', function () {
+        $('#cheat1').hide();
+      });
+      $(document).keypress(function (e) {
+        keyList.push(e.key);
+        let cheat = keyList.join('');
+        if (["dervis", "kedi", "cat"].includes(cheat.replace('ş', 's').toLocaleLowerCase())) {
+          console.log('cheat activated!')
+          $('#cheat1').show();
+          $('#dervis').get(0).currentTime = 0;
+          $('#dervis').get(0).play()
+        }
+        setTimeout(() => {
+          keyList.shift();
+        }, 2000);
+      });
+    });
+
+
   </script>
 
 </body>
