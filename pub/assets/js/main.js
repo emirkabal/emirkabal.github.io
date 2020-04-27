@@ -1,3 +1,5 @@
+
+
 window.addEventListener('scroll', function() {
   var scrollPosition = window.scrollY;
   var logoContainer = document.getElementsByClassName('arrow')[0];
@@ -8,6 +10,12 @@ window.addEventListener('scroll', function() {
 let keyList = [];
 
     $(document).ready(function () {
+      if (!["emirkabal.com", "www.emirkabal.com", "localhost"].includes(window.document.domain)) {
+        $('html').empty();
+        window.location.href = "https://emirkabal.com";
+        return;
+      }
+
       $('#dervis').on('ended', function () {
         $('#cheat1').hide();
       });
