@@ -10,13 +10,7 @@ window.addEventListener('scroll', function() {
 let keyList = [];
 
     $(document).ready(function () {
-      if (!["emirkabal.com", "www.emirkabal.com", "localhost"].includes(window.document.domain)) {
-        $('html').empty();
-        window.location.href = "https://emirkabal.com";
-        return;
-      }
-
-      
+    
       $(document).keypress(function (e) {
         keyList.push(e.key);
         let cheat = keyList.join('');
