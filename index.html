@@ -68,7 +68,7 @@
 <body>
   <div id="cheats"></div>
   <div class="fullscreen">
-    <div class="background" style="background-image: url(&#39;https://emirkabal.com/pub/assets/images/background.jpg&#39;);"></div>
+    <div class="background" style="background-image: url(&#39;https://emirkabal.com/pub/assets/images/newbackground.jpg&#39;);"></div>
     <div class="center-object">
       <section class="me unset">
         <img draggable="false" src="https://emirkabal.com/pub/assets/images/profile.png" class="image-title">
@@ -115,7 +115,7 @@
         <h1 class="emerald-text"><i class="emoji blobcatnomdisk"></i> Sosyal ağlar / İletişim:</h1>
       </div>
       <div class="one-full column">
-        <a onclick="getTag();" class="btn discord-flat" target="_blank"><i class="fab fa-discord"></i> Discord</a>
+        <a onclick="getTag();" href="discord://https://discord.com/users/269581360316940299" class="btn discord-flat" target="_blank"><i class="fab fa-discord"></i> Discord</a>
         <a href="https://github.com/EmirKabal" class="btn github-flat" target="_blank"><i class="fab fa-github"></i> GitHub</a>
         <a href="https://steamcommunity.com/id/EmirKabal" class="btn black-flat" target="_blank"><i class="fab fa-steam"></i> Steam</a>
         <a href="https://twitter.com/EmirKabal" class="btn twitter-flat" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
@@ -156,10 +156,7 @@
   <script>
     //discord button
     function getTag() {
-      $.getJSON("https://api.emirkabal.com/author", function (data) {
-        if (!data || !data.discord) return alert("Kabal#3345");
-        return alert(data.discord);
-      });
+      return alert("Kabal#3345");
     }
   </script>
 
