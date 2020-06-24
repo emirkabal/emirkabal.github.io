@@ -32,6 +32,25 @@ let keyList = [];
             $('#cheat1').hide();
             $('#cheat1').remove();
           });
+        } 
+        else if (["mantar", "mushroom", "badger"].includes(cheat.toLocaleLowerCase())) {
+          $('#cheats').append(`
+<div id="cheat3" class="modal">
+  <div class="modal-content">
+    <center>
+      <video id="badger" src="https://i.emirkabal.com/mushroom.mp4"
+        type="video/mp4"></video>
+    </center>
+  </div>
+</div>`);
+          console.log('cheat activated!')
+          $('#cheat3').show();
+          $('#badger').get(0).currentTime = 0;
+          $('#badger').get(0).play()
+          $('#badger').on('ended', function () {
+            $('#cheat3').hide();
+            $('#cheat3').remove();
+          });
         } else if (["otobus", "otobüs"].includes(cheat.toLocaleLowerCase())) {
           $('#cheats').append(`
 <div id="cheat2" class="modal">
