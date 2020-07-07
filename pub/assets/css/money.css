@@ -1,0 +1,159 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+ }
+ 
+ @-moz-keyframes drop{
+    from {top: -20px;}
+    to {top: 700px; }
+ }
+ @-webkit-keyframes drop{
+    from {top: -20px;}
+    to {top: 700px; }
+ }      
+ @-moz-keyframes bill{
+     0% { -moz-transform: rotate(-180deg) translate(0px, 0px) rotateX(-360deg) rotateY(-180deg); border-bottom-left-radius: 0px; border-top-left-radius: 0px;}
+     10% { border-bottom-right-radius: 0px; border-top-right-radius: 3px;}
+     15% { border-bottom-right-radius: 35px; border-bottom-left-radius: 0px; border-top-right-radius: 60px;}
+     70% { -moz-transform: rotate(100deg) translate(10px, 95px) rotateX(180deg) rotateY(180deg); border-bottom-left-radius: 50px;}
+     60% { border-top-left-radius: 60px; border-top-right-radius: 3px;}
+     70% { border-top-left-radius: 10px;}
+ }
+ 
+ @-webkit-keyframes bill{
+     0% { -webkit-transform: rotate(-180deg) translate(0px, 0px) rotateX(-360deg) rotateY(-180deg); border-bottom-left-radius: 0px; border-top-left-radius: 0px;}
+     10% { border-bottom-right-radius: 0px; border-top-right-radius: 3px;}
+     15% { border-bottom-right-radius: 35px; border-bottom-left-radius: 0px; border-top-right-radius: 60px;}
+     70% { -webkit-transform: rotate(100deg) translate(10px, 95px) rotateX(180deg) rotateY(180deg); border-bottom-left-radius: 50px;}
+     60% { border-top-left-radius: 60px; border-top-right-radius: 3px;}
+     70% { border-top-left-radius: 10px;}
+ } 
+ @-moz-keyframes flip{
+     0% { -moz-transform: rotateX(-180deg);}
+     100% { -moz-transform: rotateX(180deg);}
+ }
+ 
+ #money div {
+    z-index: 999;
+    position: absolute;
+    top: -40px;
+    margin: 0;
+    padding: 0;
+    -moz-animation-name: drop, bill;
+    -moz-animation-iteration-count: infinite; 
+    -moz-animation-direction: normal; 
+    -moz-animation-timing-function: ease-in;
+    -webkit-animation-name: drop, bill;
+    -webkit-animation-iteration-count: infinite; 
+    -webkit-animation-direction: normal; 
+    -webkit-animation-timing-function: 2s;
+ }
+ .bill {
+    background-image:url('https://i.emirkabal.com/banknot.jpg');
+    background-size: contain;
+    height: 41px;
+    width: 71px;
+    position: absolute;   
+ }
+ .bill.b1{
+    left: 40px;
+    -moz-animation-duration: 8s;   
+    -webkit-animation-duration: 8s;   
+ }
+ .bill.b2{
+    font-size: 1.8em;
+    left: 220px;
+    -moz-animation-duration: 7s;   
+    -webkit-animation-duration: 7s;   
+ }
+ .bill.b3{
+    left: 300px;
+    -moz-animation-duration: 6s;   
+ }
+ .bill.b4{
+    left: 380px;
+    -moz-animation-duration: 10s;   
+ } 
+ .bill.b5{
+    left: 480px;
+    -moz-animation-duration: 8s;   
+    -webkit-animation-duration: 8s;   
+ } 
+ 
+ .bill.b6{
+    left: 580px;
+    -moz-animation-duration: 6s;
+    -webkit-animation-duration: 6s;   
+ }
+ .bill.b7{
+    left: 680px;
+    -moz-animation-duration: 9s;   
+    -webkit-animation-duration: 9s;   
+ }
+ .bill.b8{
+    left: 780px;
+    -moz-animation-duration: 5s;   
+    -webkit-animation-duration: 5s;   
+ } 
+ 
+ .bill.b9{
+    left: 800px;
+    -moz-animation-duration: 8s;   
+    -webkit-animation-duration: 8s;   
+ } 
+ 
+ .bill.b10{
+    left: 820px;
+    -moz-animation-duration: 7s;   
+    -webkit-animation-duration: 7s;   
+ }
+ .bill.b11{
+    left: 940px;
+    -moz-animation-duration: 9s;   
+    -webkit-animation-duration: 9s;   
+ }
+ .bill.b12{
+    left: 850px;
+    -moz-animation-duration: 10s;   
+    -webkit-animation-duration: 10s;   
+ }
+ 
+ .bill.b13{
+    left: 1290px;
+    -moz-animation-duration: 6s;   
+    -webkit-animation-duration: 6s;   
+ }
+ .bill.b14{
+    left: 940px;
+    -moz-animation-duration: 8s;   
+    -webkit-animation-duration: 8s;   
+ }
+ .bill.b15{
+    left: 1480px;
+    -moz-animation-duration: 5s;   
+    -webkit-animation-duration: 5s;   
+ } 
+ 
+ .bill.b16{
+    left: 1400px;
+    -moz-animation-duration: 11s;   
+    -webkit-animation-duration: 11s;   
+ } 
+ 
+ .bill.b17{
+    left: 1820px;
+    -moz-animation-duration: 7s;   
+    -webkit-animation-duration: 7s;   
+ }
+ .bill.b18{
+    left: 1040px;
+    -moz-animation-duration: 11s;   
+    -webkit-animation-duration: 11s;   
+ }
+ .bill.b19{
+    left: 1080px;
+    -moz-animation-duration: 9s;   
+    -webkit-animation-duration: 9s;   
+ }
+ 
