@@ -27,7 +27,7 @@ body {
 
 .about {
   margin-top: -10px;
-  max-width: 950px;
+  max-width: fit-content;
 }
 
 .me {
@@ -159,7 +159,13 @@ body {
   max-width: fit-content;
   font-weight: 400;
   font-size: 86%;
+  max-width: 720px;
   margin: 0;
+}
+@media screen and (max-width: 1062px) {
+  .activity .activity__text p {
+    max-width: 420px;
+  }
 }
 @media screen and (max-width: 758px) {
   .activity .activity__text p {
@@ -234,7 +240,7 @@ h2 {
 }
 
 p {
-  letter-spacing: 0.2px;
+  letter-spacing: 0.3px;
   font-size: 26px;
   font-weight: 200;
 }
