@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+:root {
+  --primary-color: #3892d0;
+  --secondary-color: #7bbfec;
+  --twitter-color: #1da1f2;
+  --youtube-color: #ff0000;
+  --github-color: #24292e;
+  --twitch-color: #6441a5;
+  --linkedin-color: #0077b5;
+  --discord-color: #404eed;
+  --spotify-color: #1db954;
+}
+
+*,
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  padding: 8%;
+  padding-top: 5%;
+  padding-bottom: 0;
+  text-align: left;
+  max-width: 960px;
+}
+
+.about {
+  margin-top: -10px;
+  max-width: 950px;
+}
+
+.me {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.me .me__image img {
+  user-select: none;
+  z-index: 999;
+  align-self: center;
+  transition: height 0.3s ease-in-out;
+  border-radius: 50%;
+  height: 12rem;
+}
+@media screen and (max-width: 768px) {
+  .me .me__image img {
+    height: 10rem;
+  }
+}
+@media screen and (max-width: 578px) {
+  .me .me__image img {
+    height: 5rem;
+  }
+}
+@media screen and (max-width: 328px) {
+  .me .me__image img {
+    height: 5rem;
+  }
+}
+@media screen and (max-width: 314px) {
+  .me .me__image img {
+    height: 4rem;
+  }
+}
+.me .me__text {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: left;
+  letter-spacing: 0.6px;
+  margin: 0;
+  padding: 0;
+}
+.me .me__text h1 {
+  transition: all 0.3s ease-in-out;
+  padding: 0;
+  margin: 0;
+  margin-bottom: -2rem;
+  font-size: 2.8rem;
+}
+@media screen and (max-width: 578px) {
+  .me .me__text h1 {
+    font-size: 1.9rem;
+    margin-bottom: -24px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .me .me__text h1 {
+    font-size: 1.7rem;
+    margin-bottom: -18px;
+  }
+}
+@media screen and (max-width: 328px) {
+  .me .me__text h1 {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 314px) {
+  .me .me__text h1 {
+    font-size: 1.4rem;
+  }
+}
+.me .me__text .me__subtitle {
+  transition: all 0.3s ease-in-out;
+  font-size: 1.5rem;
+  padding-left: 0.14rem;
+  font-weight: normal;
+}
+@media screen and (max-width: 578px) {
+  .me .me__text .me__subtitle {
+    font-size: 0.9rem;
+    padding-left: 0.12rem;
+  }
+}
+@media screen and (max-width: 328px) {
+  .me .me__text .me__subtitle {
+    font-size: 0.8rem;
+    padding-left: 0.1rem;
+  }
+}
+@media screen and (max-width: 314px) {
+  .me .me__text .me__subtitle {
+    font-size: 0.6rem;
+    padding-left: 0.1rem;
+  }
+}
+
+.activity {
+  margin-top: -11%;
+  margin-bottom: 87px;
+  display: flex;
+}
+@media screen and (max-width: 896px) {
+  .activity {
+    margin-top: -14%;
+  }
+}
+@media screen and (max-width: 328px) {
+  .activity {
+    margin-bottom: 0;
+  }
+}
+.activity .activity__dot {
+  align-self: center;
+  width: 12px;
+  height: 12px;
+  margin-left: 4px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background-color: var(--spotify-color);
+}
+@media screen and (max-width: 328px) {
+  .activity .activity__dot {
+    display: none;
+  }
+}
+.activity .activity__text p {
+  max-width: fit-content;
+  font-weight: 400;
+  font-size: 86%;
+  margin: 0;
+}
+@media screen and (max-width: 758px) {
+  .activity .activity__text p {
+    max-width: 320px;
+  }
+}
+@media screen and (max-width: 578px) {
+  .activity .activity__text p {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 328px) {
+  .activity .activity__text p {
+    font-size: 70%;
+  }
+}
+
+.links {
+  display: flex;
+  margin-bottom: 20px;
+}
+.links a {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  padding: 2px;
+  transition: all 0.2s ease-out;
+}
+.links a:not(:first-child) {
+  margin-left: 12px;
+}
+.links a svg {
+  align-self: center;
+  width: 32px;
+}
+.links a:hover {
+  background-color: var(--primary-color);
+  fill: #fff;
+}
+.links a::after {
+  background: none;
+}
+
+.footer {
+  padding-top: 8px;
+}
+.footer a {
+  color: var(--primary-color);
+  letter-spacing: 1px;
+  font-size: 22px;
+}
+.footer a:not(:first-child) {
+  margin-left: 1.2rem;
+}
+@media screen and (max-width: 320px) {
+  .footer a {
+    font-size: 18px;
+  }
+}
+.footer a:hover {
+  color: var(--secondary-color);
+}
+.footer a::after {
+  background: none;
+}
+
+h2 {
+  font-size: 32px;
+  margin-top: 40px;
+}
+
+p {
+  letter-spacing: 0.2px;
+  font-size: 26px;
+  font-weight: 200;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  color: #000;
+  transition: color 0.2s ease-in-out;
+}
+a:hover {
+  color: #fff;
+}
+a:hover::after {
+  top: 10%;
+  opacity: 1;
+}
+a::after {
+  position: absolute;
+  background-color: var(--primary-color);
+  bottom: 0.1rem;
+  left: 0;
+  right: 0;
+  opacity: 0.3;
+  top: 60%;
+  z-index: -1;
+  transition: 0.2s ease-in-out;
+  content: "";
+}
+
+.bg-twitter:hover {
+  background-color: var(--twitter-color) !important;
+}
+
+.bg-youtube:hover {
+  background-color: var(--youtube-color) !important;
+}
+
+.bg-twitch:hover {
+  background-color: var(--twitch-color) !important;
+}
+
+.bg-linkedin:hover {
+  background-color: var(--linkedin-color) !important;
+}
+
+.bg-github:hover {
+  background-color: var(--github-color) !important;
+}
+
+.bg-discord:hover {
+  background-color: var(--discord-color) !important;
+}
+
+.bg-spotify::after {
+  background-color: var(--spotify-color);
+}
+
+.policy p {
+  font-size: 19px;
+}
+
+.f-policy {
+  padding-bottom: 80px;
+}
+
+/*# sourceMappingURL=style.css.map */
