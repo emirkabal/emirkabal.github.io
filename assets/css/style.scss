@@ -12,9 +12,7 @@
   --spotify-color: #1db954;
 }
 
-*,
-html,
-body {
+*, html, body {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -52,14 +50,9 @@ body {
         height: 5rem;
       }
 
-      @media screen and (max-width: 328px) {
-        height: 5rem;
-      }
-
       @media screen and (max-width: 314px) {
         height: 4rem;
       }
-
     }
   }
 
@@ -128,8 +121,9 @@ body {
   @media screen and (max-width: 896px) {
     margin-top: -14%;
   }
-  @media screen and (max-width: 328px) {
-    margin-bottom: 0;
+  @media screen and (max-width: 468px) {
+    margin-top: -8%;
+    margin-bottom: -10%;
   }
   .activity__dot {
     align-self: center;
@@ -139,7 +133,7 @@ body {
     margin-right: 8px;
     border-radius: 50%;
     background-color: var(--spotify-color);
-    @media screen and (max-width: 328px) {
+    @media screen and (max-width: 468px) {
       display: none;
     }
   }
@@ -158,8 +152,9 @@ body {
       @media screen and (max-width: 578px) {
         max-width: 300px;
       }
-      @media screen and (max-width: 328px) {
-        font-size: 70%;
+      @media screen and (max-width: 468px) {
+        font-size: 12px;
+        text-align: center;
       }
       margin: 0;
     }
@@ -178,6 +173,9 @@ body {
     padding: 2px;
     transition: all .2s ease-out;
 
+    &:first-child {
+      margin-left: -8px;
+    }
     &:not(:first-child) {
       margin-left: 12px;
     }
@@ -195,7 +193,6 @@ body {
     &::after {
       background: none;
     }
-
   }
 }
 
@@ -210,7 +207,7 @@ body {
 
     letter-spacing: 1px;
     font-size: 22px;
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 468px) {
       font-size: 18px;
     }
 
@@ -227,12 +224,24 @@ body {
 h2 {
   font-size: 32px;
   margin-top: 40px;
+  @media screen and (max-width: 468px) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 328px) {
+    font-size: 16px;
+  }
 }
 
 p {
   letter-spacing: 0.3px;
   font-size: 26px;
   font-weight: 200;
+  @media screen and (max-width: 468px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 328px) {
+    font-size: 14px;
+  }
 }
 
 a {

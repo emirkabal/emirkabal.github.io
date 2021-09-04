@@ -11,9 +11,7 @@
   --spotify-color: #1db954;
 }
 
-*,
-html,
-body {
+*, html, body {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -136,9 +134,10 @@ body {
     margin-top: -14%;
   }
 }
-@media screen and (max-width: 328px) {
+@media screen and (max-width: 468px) {
   .activity {
-    margin-bottom: 0;
+    margin-top: -8%;
+    margin-bottom: -10%;
   }
 }
 .activity .activity__dot {
@@ -150,7 +149,7 @@ body {
   border-radius: 50%;
   background-color: var(--spotify-color);
 }
-@media screen and (max-width: 328px) {
+@media screen and (max-width: 468px) {
   .activity .activity__dot {
     display: none;
   }
@@ -177,9 +176,10 @@ body {
     max-width: 300px;
   }
 }
-@media screen and (max-width: 328px) {
+@media screen and (max-width: 468px) {
   .activity .activity__text p {
-    font-size: 70%;
+    font-size: 12px;
+    text-align: center;
   }
 }
 
@@ -195,6 +195,9 @@ body {
   height: 48px;
   padding: 2px;
   transition: all 0.2s ease-out;
+}
+.links a:first-child {
+  margin-left: -8px;
 }
 .links a:not(:first-child) {
   margin-left: 12px;
@@ -222,7 +225,7 @@ body {
 .footer a:not(:first-child) {
   margin-left: 1.2rem;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 468px) {
   .footer a {
     font-size: 18px;
   }
@@ -238,11 +241,31 @@ h2 {
   font-size: 32px;
   margin-top: 40px;
 }
+@media screen and (max-width: 468px) {
+  h2 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 328px) {
+  h2 {
+    font-size: 16px;
+  }
+}
 
 p {
   letter-spacing: 0.3px;
   font-size: 26px;
   font-weight: 200;
+}
+@media screen and (max-width: 468px) {
+  p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 328px) {
+  p {
+    font-size: 14px;
+  }
 }
 
 a {
