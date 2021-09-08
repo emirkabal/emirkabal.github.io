@@ -10,10 +10,30 @@
   --linkedin-color: #0077b5;
   --discord-color: #404eed;
   --spotify-color: #1db954;
+  --color-scroll: #b8b8b8;
+  --color-scroll-hover: #888;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-scroll);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-scroll-hover);
 }
 
 *, html, body {
   font-family: 'Open Sans', sans-serif;
+  scrollbar-color: var(--color-scroll) var(--color-secondary);
+  scrollbar-width: thin;
 }
 
 body {
@@ -259,6 +279,7 @@ a {
   }
 
   &::after {
+    display: inline-block;
     position: absolute;
     background-color: var(--primary-color);
     bottom: 0.1rem;
