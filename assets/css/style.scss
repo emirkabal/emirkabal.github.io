@@ -230,6 +230,9 @@ body {
     @media screen and (max-width: 468px) {
       font-size: 18px;
     }
+    @media screen and (max-width: 310px) {
+      font-size: 12px;
+    }
 
     &:hover {
       color: var(--secondary-color);
@@ -280,7 +283,6 @@ a {
   }
 
   &::after {
-    display: inline-block;
     position: absolute;
     background-color: var(--primary-color);
     bottom: 0.1rem;
