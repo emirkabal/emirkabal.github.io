@@ -191,7 +191,7 @@ body {
     width: 48px;
     height: 48px;
     padding: 2px;
-    transition: all .2s ease-out;
+    transition: all 150ms ease-in-out;
 
     &:first-child {
       margin-left: -8px;
@@ -291,7 +291,7 @@ a {
     opacity: .3;
     top: 60%;
     z-index: -1;
-    transition: .2s ease-in-out;
+    transition: 150ms all;
     content: '';
   }
 }
@@ -346,4 +346,17 @@ a {
 
 .f-policy {
   padding-bottom: 80px;
+}
+
+.indent {
+  display: inline-block;
+  width: 1.5rem;
+  height: 0.006rem;
+  background: #000;
+  margin-bottom: 0.625rem;
+  margin-right: 0.375rem;
+  opacity: .4;
+  @media screen and (max-width: 468px) {
+    display: none;
+  }
 }
