@@ -366,4 +366,40 @@ a::after {
   }
 }
 
+@keyframes dervis-active {
+  0% {
+    transform: translateY(110px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes dervis-inactive {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(110px);
+  }
+}
+.dervis {
+  background: url("../images/dervis.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 180px;
+  height: 110px;
+  transform: translateY(110px);
+}
+.dervis.active {
+  animation: dervis-active 0.7s ease-in-out;
+  transform: translateY(0);
+}
+.dervis.inactive {
+  animation: dervis-inactive 1s ease-in-out;
+  transform: translateY(110px);
+}
+
 /*# sourceMappingURL=style.css.map */
