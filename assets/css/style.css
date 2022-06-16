@@ -402,4 +402,98 @@ a::after {
   transform: translateY(110px);
 }
 
+p.small-text {
+  font-size: 16px;
+  margin-top: 8px;
+}
+@media screen and (max-width: 468px) {
+  p.small-text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .custom {
+    margin: 0px;
+    padding: 18px;
+    box-sizing: border-box;
+  }
+}
+.custom h1, .custom p {
+  margin: 0;
+}
+
+.bank-accounts {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  margin: 20px 0 40px 0;
+  padding: 0px;
+  font-size: 18px;
+  width: 100%;
+  max-width: 360px;
+}
+@media screen and (max-width: 468px) {
+  .bank-accounts {
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+  }
+}
+.bank-accounts li {
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  padding: 18px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+}
+.bank-accounts li:not(:last-child) {
+  margin-bottom: 12px;
+}
+.bank-accounts li:hover {
+  border: 1px solid black;
+}
+.bank-accounts li.copied {
+  background-color: rgba(29, 185, 84, 0.7);
+  border: 1px solid rgba(29, 185, 84, 0.7);
+  color: #fff;
+  cursor: default;
+}
+@media screen and (max-width: 468px) {
+  .bank-accounts li {
+    padding: 8px 0 8px 0;
+  }
+}
+.bank-accounts li h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+@media screen and (max-width: 468px) {
+  .bank-accounts li h2 {
+    font-size: 18px;
+  }
+}
+.bank-accounts li img {
+  width: 56px;
+  height: 56px;
+  margin-right: 18px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 468px) {
+  .bank-accounts li img {
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+    margin-left: 8px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
