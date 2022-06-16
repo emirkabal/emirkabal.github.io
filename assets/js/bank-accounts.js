@@ -55,9 +55,12 @@ window.addEventListener("load", () => {
 
   document.querySelectorAll(".bank-accounts li").forEach((bankAccount) => {
     bankAccount.addEventListener("click", function () {
+      if (this.classList.contains("copied")) return;
       const iban = this.querySelector("span").innerText;
       navigator.clipboard.writeText(iban);
-      this.querySelector("span").innerText = "Kopyalandı!";
+      this.querySelector("span").innerText = navigator.language.includes("tr")
+        ? "Kopyalandı!"
+        : "Copied!";
       this.classList.add("copied");
       setTimeout(() => {
         this.querySelector("span").innerText = iban;

@@ -242,7 +242,10 @@ body {
 }
 @media screen and (max-width: 468px) {
   .footer a {
-    font-size: 18px;
+    font-size: 14px;
+  }
+  .footer a:not(:first-child) {
+    margin-left: 0.4rem;
   }
 }
 @media screen and (max-width: 310px) {
