@@ -10,6 +10,11 @@ const accounts = [
     iban: "TR48 0006 4000 0013 7020 1590 95",
   },
   {
+    name: "Ziraat Bankası",
+    image: "ziraat",
+    iban: "TR47 0001 0090 1021 9047 9050 01",
+  },
+  {
     name: "Garanti BBVA",
     image: "garanti",
     iban: "TR55 0006 2001 2200 0006 8670 51",

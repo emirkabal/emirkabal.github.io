@@ -415,6 +415,9 @@ p.small-text {
   }
 }
 
+.custom {
+  padding-top: 1%;
+}
 @media screen and (max-width: 468px) {
   .custom {
     margin: 0px;
@@ -431,7 +434,7 @@ p.small-text {
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  margin: 20px 0 40px 0;
+  margin: 20px 0 30px 0;
   padding: 0px;
   font-size: 18px;
   width: 100%;
