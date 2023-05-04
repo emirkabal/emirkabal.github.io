@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 
 :root {
   --primary-color: #3892d0;
@@ -30,8 +30,10 @@
   background: var(--color-scroll-hover);
 }
 
-*, html, body {
-  font-family: 'Open Sans', sans-serif;
+*,
+html,
+body {
+  font-family: "Open Sans", sans-serif;
   scrollbar-color: var(--color-scroll) var(--color-secondary);
   scrollbar-width: thin;
 }
@@ -58,7 +60,7 @@ body {
       user-select: none;
       z-index: 999;
       align-self: center;
-      transition: height .3s ease-in-out;
+      transition: height 0.3s ease-in-out;
       border-radius: 50%;
       height: 12rem;
 
@@ -86,7 +88,7 @@ body {
     padding: 0;
 
     h1 {
-      transition: all .3s ease-in-out;
+      transition: all 0.3s ease-in-out;
       padding: 0;
       margin: 0;
       margin-bottom: -2rem;
@@ -111,7 +113,7 @@ body {
     }
 
     .me__subtitle {
-      transition: all .3s ease-in-out;
+      transition: all 0.3s ease-in-out;
       font-size: 1.5rem;
       padding-left: 0.14rem;
       font-weight: normal;
@@ -187,11 +189,11 @@ body {
   a {
     display: flex;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 14px;
     width: 48px;
     height: 48px;
-    padding: 2px;
-    transition: all 150ms ease-in-out;
+    padding: 4px;
+    transition: all 100ms ease-in-out;
 
     &:first-child {
       margin-left: -8px;
@@ -202,7 +204,7 @@ body {
 
     svg {
       align-self: center;
-      width: 32px;
+      width: 40px;
     }
 
     &:hover {
@@ -275,7 +277,7 @@ a {
   text-decoration: none;
   position: relative;
   color: #000;
-  transition: color .2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 
   &:hover {
     color: #fff;
@@ -291,11 +293,11 @@ a {
     bottom: 0.1rem;
     left: 0;
     right: 0;
-    opacity: .3;
+    opacity: 0.3;
     top: 60%;
     z-index: -1;
     transition: 150ms all;
-    content: '';
+    content: "";
   }
 }
 
@@ -358,7 +360,7 @@ a {
   background: #000;
   margin-bottom: 0.625rem;
   margin-right: 0.375rem;
-  opacity: .4;
+  opacity: 0.4;
   @media screen and (max-width: 468px) {
     display: none;
   }
@@ -393,7 +395,7 @@ a {
   height: 110px;
   transform: translateY(110px);
   &.active {
-    animation: dervis-active .7s ease-in-out;
+    animation: dervis-active 0.7s ease-in-out;
     transform: translateY(0);
   }
   &.inactive {
@@ -417,8 +419,9 @@ p.small-text {
     padding: 18px;
     box-sizing: border-box;
   }
-  h1,p {
-    margin:0
+  h1,
+  p {
+    margin: 0;
   }
 }
 
@@ -427,8 +430,6 @@ p.small-text {
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  
-  margin: 20px 0 30px 0;
   padding: 0px;
   font-size: 18px;
   width: 100%;
@@ -436,53 +437,70 @@ p.small-text {
   @media screen and (max-width: 468px) {
     align-items: center;
     justify-content: center;
-    max-width: 100%;
   }
   li {
     user-select: none;
     &:not(:last-child) {
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
     display: flex;
     align-items: center;
     justify-content: start;
+    overflow: hidden;
+    gap: 12px;
     width: 100%;
     padding: 18px;
-    font-size: 16px;
     &:hover {
       border: 1px solid rgba($color: #000000, $alpha: 1);
     }
     &.copied {
       background-color: rgba($color: #1db954, $alpha: 0.7);
-      border:1px solid rgba($color: #1db954, $alpha: 0.7);
+      border: 1px solid rgba($color: #1db954, $alpha: 0.7);
       color: #fff;
       cursor: default;
     }
     @media screen and (max-width: 468px) {
-      padding: 8px 0 8px 0;
+      padding: 8px;
     }
     border-radius: 10px;
     border: 1px solid rgba($color: #000000, $alpha: 0.4);
     transition: all 150ms ease-in-out;
-    cursor:pointer;
-    h2 {
-      margin:0;
-      padding: 0;
-      font-size: 20px;
-      @media screen and (max-width: 468px) {
-        font-size: 18px;
+    cursor: pointer;
+    .content {
+      width: 100%;
+      min-width: 0px;
+
+      h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        @media screen and (max-width: 468px) {
+          font-size: 18px;
+        }
+      }
+      p {
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+        font-size: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        @media screen and (max-width: 468px) {
+          font-size: 14px;
+        }
       }
     }
     img {
       width: 56px;
       height: 56px;
-      margin-right: 18px;
       border-radius: 50%;
       @media screen and (max-width: 468px) {
         width: 48px;
         height: 48px;
-        margin-right: 12px;
-        margin-left: 8px;
       }
     }
   }

@@ -29,7 +29,9 @@
   background: var(--color-scroll-hover);
 }
 
-*, html, body {
+*,
+html,
+body {
   font-family: "Open Sans", sans-serif;
   scrollbar-color: var(--color-scroll) var(--color-secondary);
   scrollbar-width: thin;
@@ -205,11 +207,11 @@ body {
 .links a {
   display: flex;
   justify-content: center;
-  border-radius: 50%;
+  border-radius: 14px;
   width: 48px;
   height: 48px;
-  padding: 2px;
-  transition: all 150ms ease-in-out;
+  padding: 4px;
+  transition: all 100ms ease-in-out;
 }
 .links a:first-child {
   margin-left: -8px;
@@ -219,7 +221,7 @@ body {
 }
 .links a svg {
   align-self: center;
-  width: 32px;
+  width: 40px;
 }
 .links a:hover {
   background-color: var(--primary-color);
@@ -425,7 +427,8 @@ p.small-text {
     box-sizing: border-box;
   }
 }
-.custom h1, .custom p {
+.custom h1,
+.custom p {
   margin: 0;
 }
 
@@ -434,7 +437,6 @@ p.small-text {
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  margin: 20px 0 30px 0;
   padding: 0px;
   font-size: 18px;
   width: 100%;
@@ -444,7 +446,6 @@ p.small-text {
   .bank-accounts {
     align-items: center;
     justify-content: center;
-    max-width: 100%;
   }
 }
 .bank-accounts li {
@@ -452,16 +453,17 @@ p.small-text {
   display: flex;
   align-items: center;
   justify-content: start;
+  overflow: hidden;
+  gap: 12px;
   width: 100%;
   padding: 18px;
-  font-size: 16px;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.4);
   transition: all 150ms ease-in-out;
   cursor: pointer;
 }
 .bank-accounts li:not(:last-child) {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 .bank-accounts li:hover {
   border: 1px solid black;
@@ -474,31 +476,49 @@ p.small-text {
 }
 @media screen and (max-width: 468px) {
   .bank-accounts li {
-    padding: 8px 0 8px 0;
+    padding: 8px;
   }
 }
-.bank-accounts li h2 {
+.bank-accounts li .content {
+  width: 100%;
+  min-width: 0px;
+}
+.bank-accounts li .content h2 {
   margin: 0;
   padding: 0;
   font-size: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 @media screen and (max-width: 468px) {
-  .bank-accounts li h2 {
+  .bank-accounts li .content h2 {
     font-size: 18px;
+  }
+}
+.bank-accounts li .content p {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media screen and (max-width: 468px) {
+  .bank-accounts li .content p {
+    font-size: 14px;
   }
 }
 .bank-accounts li img {
   width: 56px;
   height: 56px;
-  margin-right: 18px;
   border-radius: 50%;
 }
 @media screen and (max-width: 468px) {
   .bank-accounts li img {
     width: 48px;
     height: 48px;
-    margin-right: 12px;
-    margin-left: 8px;
   }
 }
 

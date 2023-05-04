@@ -51,9 +51,9 @@ window.addEventListener("load", () => {
     <img src="assets/images/banks/${account.image}.jpg" alt="${account.name} Görsel">
     <div class="content">
         <h2>${account.name}</h2>
-        <span>
-            ${account.iban}
-        </span>
+        <p>
+          ${account.iban}
+        </p>
     </div>`;
     bankAccounts.appendChild(bankAccount);
   });
@@ -61,14 +61,14 @@ window.addEventListener("load", () => {
   document.querySelectorAll(".bank-accounts li").forEach((bankAccount) => {
     bankAccount.addEventListener("click", function () {
       if (this.classList.contains("copied")) return;
-      const iban = this.querySelector("span").innerText;
+      const iban = this.querySelector("p").innerText;
       navigator.clipboard.writeText(iban);
-      this.querySelector("span").innerText = navigator.language.includes("tr")
+      this.querySelector("p").innerText = navigator.language.includes("tr")
         ? "Kopyalandı!"
         : "Copied!";
       this.classList.add("copied");
       setTimeout(() => {
-        this.querySelector("span").innerText = iban;
+        this.querySelector("p").innerText = iban;
         this.classList.remove("copied");
       }, 2000);
     });
