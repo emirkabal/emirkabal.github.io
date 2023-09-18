@@ -23,6 +23,10 @@ const social = [
     url: 'https://x.com/emirkabal'
   },
   {
+    name: 'instagram',
+    url: 'https://instagram.com/emirkaball'
+  },
+  {
     name: 'youtube',
     url: 'https://www.youtube.com/@kabal3345'
   },
@@ -56,7 +60,7 @@ const footer = [
     <div class="my-8">
       <ContentDoc
         :head="false"
-        class="prose prose-invert max-w-none prose-h2:my-0 prose-h2:font-semibold prose-p:text-xl prose-a:no-underline"
+        class="prose max-w-none dark:prose-invert prose-h2:my-0 prose-h2:font-semibold prose-p:text-xl prose-a:no-underline"
         path="/about"
       />
     </div>
@@ -66,17 +70,17 @@ const footer = [
         <h2 class="text-2xl font-semibold">Blog</h2>
         <NuxtLink
           to="/blog"
-          class="mt-1 text-sm text-gray-300 transition-colors hover:text-white md:text-base"
+          class="mt-1 text-sm text-gray-600 transition-colors hover:text-black dark:text-gray-300 dark:hover:text-white md:text-base"
           >See all posts (Turkish only)</NuxtLink
         >
       </div>
       <ul class="grid grid-cols-1 gap-2 md:grid-cols-2">
         <li v-for="post in posts" :key="post.createdAt">
           <NuxtLink
-            class="inline-block w-full rounded border border-gray-600 px-4 py-2 text-gray-300 transition-colors hover:border-white hover:text-white"
+            class="inline-block w-full rounded border border-gray-300 px-4 py-2 text-gray-600 transition-colors hover:border-gray-600 hover:text-black dark:border-gray-600 dark:text-gray-300 dark:hover:border-white dark:hover:text-white"
             :to="post._path"
           >
-            <h3 class="line-clamp-1 text-lg">{{ post.title }}</h3>
+            <h3 class="line-clamp-1 md:text-lg">{{ post.title }}</h3>
             <time class="line-clamp-1 text-xs">
               {{ $moment(post.createdAt).locale('tr').format('DD MMM YYYY') }}
             </time>
@@ -87,11 +91,11 @@ const footer = [
 
     <div class="my-8">
       <h2 class="text-2xl font-semibold">Social</h2>
-      <ul class="flex flex-wrap gap-x-4 gap-y-2">
+      <ul class="flex flex-wrap gap-x-2 gap-y-2">
         <li
           v-for="item in social"
           :key="item.name"
-          class="flex-shrink-0 text-xl text-gray-300 transition-colors hover:text-white"
+          class="flex-shrink-0 text-xl text-gray-600 transition-colors hover:text-black dark:text-gray-300 dark:hover:text-white"
         >
           <a
             :href="item.url"
@@ -106,11 +110,11 @@ const footer = [
 
     <footer class="my-8">
       <h2 class="text-2xl font-semibold">Helpful</h2>
-      <ul class="flex flex-wrap gap-x-4 gap-y-2">
+      <ul class="flex flex-wrap gap-x-2 gap-y-2">
         <li
           v-for="item in footer"
           :key="item.name"
-          class="flex-shrink-0 text-xl text-gray-300 transition-colors hover:text-white"
+          class="flex-shrink-0 text-xl text-gray-600 transition-colors hover:text-black dark:text-gray-300 dark:hover:text-white"
         >
           <a
             v-if="item.url.startsWith('http')"

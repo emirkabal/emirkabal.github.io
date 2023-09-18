@@ -43,13 +43,13 @@ Next.js, React tabanlı bir JavaScript çerçevesidir ve özellikle SSR (Sunucu 
 
 Nuxt.js, Vue.js tabanlı bir JavaScript çerçevesidir ve özellikle SSR (Sunucu Tarafı Rendere) uygulamaları için tasarlanmıştır. Nuxt.js, Vue.js'nin gücünü alır ve SEO dostu, hızlı yükleme sürelerine sahip uygulamalar oluşturmanıza yardımcı olur. Ayrıca, modüler yapı ve kolay kullanım sunar.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Axios_%28computer_library%29_logo.svg/1280px-Axios_%28computer_library%29_logo.svg.png)
+![](https://res.cloudinary.com/practicaldev/image/fetch/s--oGEXGSkH--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/iu70z7h4vp482ptvsw3d.png)
 
 ## 7. Axios
 
 Axios, HTTP isteklerini yapmak için kullanılan popüler bir JavaScript kütüphanesidir. Ajax istekleri yapmak ve sunucu ile iletişim kurmak için kullanılır. Axios, modern tarayıcılarda ve Node.js'de kullanım için idealdir ve hata işleme, isteği iptal etme ve özellikle RESTful API'lar ile iyi entegrasyon sunar.
 
-![](https://assets.stickpng.com/images/62a765c8bd73a4af5c5d4fbc.png)
+![](https://jestjs.io/img/opengraph.png)
 
 ## 8. Jest
 

@@ -11,7 +11,9 @@
     >
       <div class="tracking-wide">
         <h1 class="text-4xl font-bold md:text-5xl">Emir Kabal</h1>
-        <p class="text-base text-gray-300 md:text-xl">Full-stack developer</p>
+        <p class="text-base text-gray-600 dark:text-gray-300 md:text-xl">
+          Full-stack developer
+        </p>
       </div>
       <img
         src="~/assets/images/me.jpg"
@@ -22,10 +24,10 @@
     </header>
     <header
       v-else
-      class="z-10 rounded-xl bg-slate-800/40 px-4 py-2 backdrop-blur-3xl"
+      class="z-10 rounded-xl bg-gray-200 px-4 py-2 shadow backdrop-blur-3xl dark:bg-slate-800/40"
     >
       <ul class="flex items-center gap-2 font-semibold">
-        <li class="flex flex-shrink-0 gap-2">
+        <li class="flex flex-shrink-0 items-center gap-2">
           <NuxtLink to="/" class="transition-opacity hover:opacity-75">
             <img
               src="~/assets/images/me.jpg"
@@ -34,15 +36,15 @@
               class="h-6 w-6 rounded-full"
             />
           </NuxtLink>
-          <span class="text-gray-300">/</span>
+          <span class="text-gray-600 dark:text-gray-300">/</span>
         </li>
         <li
           v-for="(item, index) in $route.fullPath.split('/').slice(1)"
           :key="index"
-          class="flex gap-2"
+          class="flex items-center gap-2"
         >
           <NuxtLink
-            class="line-clamp-1 text-white transition-colors hover:text-gray-300"
+            class="line-clamp-1 transition-colors hover:text-gray-600 dark:hover:text-gray-300"
             :to="`${
               index < $route.fullPath.split('/').slice(1).length - 1
                 ? `/${item}`
@@ -51,7 +53,7 @@
           >
             {{ item }}
           </NuxtLink>
-          <span class="text-gray-300">{{
+          <span class="text-gray-600 dark:text-gray-300">{{
             index < $route.fullPath.split('/').slice(1).length - 1 ? '/' : ''
           }}</span>
         </li>

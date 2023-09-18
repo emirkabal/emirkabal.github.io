@@ -31,7 +31,7 @@ onBeforeRouteLeave(() => {
     }"
   >
     <div
-      class="pointer-events-none absolute inset-0 left-1/2 top-1/2 -z-10 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-t from-green-400 to-violet-600 blur-3xl"
+      class="pointer-events-none absolute inset-0 left-1/2 top-1/2 -z-10 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-t from-green-400 to-violet-600 opacity-50 blur-3xl dark:opacity-100"
     ></div>
     <Transition
       name="fade-overlay"
