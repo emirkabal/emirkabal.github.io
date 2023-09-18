@@ -66,8 +66,8 @@ const footer = [
         <h2 class="text-2xl font-semibold">Blog</h2>
         <NuxtLink
           to="/blog"
-          class="mt-1 text-gray-300 transition-colors hover:text-white"
-          >See all posts (English not supported)</NuxtLink
+          class="mt-1 text-sm text-gray-300 transition-colors hover:text-white md:text-base"
+          >See all posts (Turkish only)</NuxtLink
         >
       </div>
       <ul class="grid grid-cols-1 gap-2 md:grid-cols-2">
