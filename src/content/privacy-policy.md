@@ -1,8 +1,8 @@
 # Privacy Policy
 
-**Effective Date:** 9/17/2023
+**Effective Date:** 9/18/2023
 
-This Privacy Policy outlines how I, Emir Kabal, ("I," "me," or "my") collect, use, disclose, and protect your personal information when you visit my website https://emirkabal.com and interact with my services. I am committed to respecting your privacy and ensuring the security of your personal information.
+This Privacy Policy outlines how I, Emir Kabal, ("I," "me," or "my") collect, use, disclose, and protect your personal information when you visit my website [https://emirkabal.com](/) and interact with my services. I am committed to respecting your privacy and ensuring the security of your personal information.
 
 ## 1. Information I Collect
 

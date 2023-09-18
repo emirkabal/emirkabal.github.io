@@ -66,7 +66,7 @@ useSeoMeta({
         <li
           v-for="account in accounts"
           :key="account.image"
-          class="cursor-pointer rounded border-2 border-gray-600 px-4 py-2 transition-colors hover:border-white"
+          class="cursor-pointer rounded border border-gray-300 px-4 py-2 transition-colors hover:border-gray-600 dark:border-gray-600 dark:hover:border-white"
           @click="copyAccount(account)"
         >
           <div class="flex items-center gap-4">
@@ -85,7 +85,7 @@ useSeoMeta({
                 class="text-sm text-green-400"
                 >Copied!</span
               >
-              <span v-else class="text-sm text-gray-300"
+              <span v-else class="text-sm text-gray-600 dark:text-gray-300"
                 >Click here to copy</span
               >
             </div>
