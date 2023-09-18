@@ -29,7 +29,7 @@ Angular, Google tarafından geliştirilen bir başka popüler JavaScript çerçe
 
 ## 4. Svelte
 
-yeni nesil bir JavaScript derleme dilidir ve web uygulamaları oluşturmayı daha verimli hale getirir. Svelte, kompilasyon süreci sırasında bileşenleri gerçek JavaScript koduna dönüştürür, bu da daha hızlı çalışan ve daha hafif uygulamalar oluşturmanıza yardımcı olur. Svelte, Vue.js veya React gibi sanal DOM kullanmayan bir yaklaşım sunar.
+Yeni nesil bir JavaScript derleme dilidir ve web uygulamaları oluşturmayı daha verimli hale getirir. Svelte, kompilasyon süreci sırasında bileşenleri gerçek JavaScript koduna dönüştürür, bu da daha hızlı çalışan ve daha hafif uygulamalar oluşturmanıza yardımcı olur. Svelte, Vue.js veya React gibi sanal DOM kullanmayan bir yaklaşım sunar.
 
 ![](https://hackernoon.imgix.net/images/uDPqwahUxKSKSQ17IYMKmh9T5uu1-jjh3te3.jpeg)
 
@@ -43,7 +43,7 @@ Next.js, React tabanlı bir JavaScript çerçevesidir ve özellikle SSR (Sunucu 
 
 Nuxt.js, Vue.js tabanlı bir JavaScript çerçevesidir ve özellikle SSR (Sunucu Tarafı Rendere) uygulamaları için tasarlanmıştır. Nuxt.js, Vue.js'nin gücünü alır ve SEO dostu, hızlı yükleme sürelerine sahip uygulamalar oluşturmanıza yardımcı olur. Ayrıca, modüler yapı ve kolay kullanım sunar.
 
-![](https://res.cloudinary.com/practicaldev/image/fetch/s--oGEXGSkH--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/iu70z7h4vp482ptvsw3d.png)
+![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/iu70z7h4vp482ptvsw3d.png)
 
 ## 7. Axios
 
@@ -54,5 +54,9 @@ Axios, HTTP isteklerini yapmak için kullanılan popüler bir JavaScript kütüp
 ## 8. Jest
 
 Jest, JavaScript uygulamalarını test etmek için kullanılan bir test çerçevesidir. Jest, kodu test etmek için basit ve etkili bir yol sunar ve React gibi kütüphanelerle uyumlu olarak çalışır. Otomatik test çalıştırma, kod kapasitesi ve hata ayıklama özellikleri ile geliştiriciler için önemli bir araçtır.
+
+---
+
+## Sonuç
 
 Bu, modern web geliştirmenin sadece birkaç örneğidir. Web geliştirme dünyası sürekli olarak yeniliklerle dolu olduğundan, yeni araçlar ve kütüphaneler sürekli olarak ortaya çıkmaktadır. Hangi araçları ve kütüphaneleri kullanmanız gerektiği, projenizin gereksinimlerine ve kişisel tercihlerinize bağlıdır. Ancak bu listedeki araçlar ve kütüphaneler, web geliştirme sürecinizi daha verimli hale getirmenize yardımcı olabilir.
