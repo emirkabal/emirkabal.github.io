@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    scroll-behavior: smooth;
+    @apply antialiased;
+  }
+  body {
+    @apply bg-black text-white;
+  }
+  /* scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-neutral-900;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-slate-800;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-700;
+  }
+  /* scrollbar */
+}
+
+@layer utilities {
+  .prose :where(iframe):not(:where([class~='not-prose'] *)) {
+    @apply aspect-video h-auto w-full rounded-xl;
+  }
+}
