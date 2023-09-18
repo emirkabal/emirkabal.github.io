@@ -51,7 +51,9 @@ useSeoMeta({
             <div
               class="rounded-xl p-6 shadow-md md:p-12"
               :style="{
-                background: `url(/images/branding/bg-transparent-w.png)`
+                backgroundImage: `url(/images/branding/bg-transparent-w.png)`,
+                backgroundPosition: '0%',
+                backgroundSize: '30px'
               }"
             >
               <img
@@ -82,7 +84,9 @@ useSeoMeta({
             <div
               class="rounded-xl p-6 shadow-md md:p-12"
               :style="{
-                background: `url(/images/branding/bg-transparent.png)`
+                backgroundImage: `url(/images/branding/bg-transparent.png)`,
+                backgroundPosition: '0%',
+                backgroundSize: '30px'
               }"
             >
               <img
