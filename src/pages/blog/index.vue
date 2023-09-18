@@ -47,8 +47,9 @@ const groups = computed(() => {
   })
 })
 
-const title = 'Son Gönderiler'
-const description = 'Emir Kabal tarafından yazılan son gönderileri okuyun.'
+const title = 'Blog'
+const description =
+  'Emir Kabal tarafından yazılan son blog gönderilerini okuyun.'
 useSeoMeta({
   titleTemplate: '%s - Emir Kabal',
   title,
@@ -63,24 +64,25 @@ useSeoMeta({
 
 <template>
   <main class="mt-8">
-    <h1 class="text-3xl font-bold">Son Gönderiler</h1>
+    <h1 class="text-3xl font-bold">Blog</h1>
+    <h2 class="text-xl text-gray-600 dark:text-gray-300">Son Gönderiler</h2>
     <div
-      class="my-12 space-y-4"
+      class="my-8 space-y-4"
       v-for="group in groups"
       :key="group.date.toString()"
     >
-      <h2 class="text-2xl font-bold">
+      <h6 class="text-2xl font-bold">
         {{ $moment(group.date).locale('tr').format('MMMM YYYY') }}
-      </h2>
+      </h6>
       <ul class="space-y-2">
         <li v-for="post in group.posts" :key="post._path">
           <NuxtLink
             :to="post._path"
             class="flex w-full min-w-0 items-center justify-between rounded border border-gray-300 px-4 py-2 text-gray-600 transition-colors hover:border-gray-600 hover:text-black dark:border-gray-600 dark:text-gray-300 dark:hover:border-white dark:hover:text-white md:text-lg"
           >
-            <h3 class="line-clamp-1">
+            <span class="line-clamp-1">
               {{ post.title }}
-            </h3>
+            </span>
             <time class="flex-shrink-0 pl-4 text-xs font-semibold">
               {{ $moment(post.createdAt).locale('tr').format('DD MMM') }}
             </time>

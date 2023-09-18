@@ -67,7 +67,7 @@ const footer = [
 
     <div class="my-8" v-if="posts && posts.length > 0">
       <div class="mb-2 flex items-center gap-2">
-        <h2 class="text-2xl font-semibold">Blog</h2>
+        <h3 class="text-2xl font-semibold">Blog</h3>
         <NuxtLink
           to="/blog"
           class="mt-1 text-sm text-gray-600 transition-colors hover:text-black dark:text-gray-300 dark:hover:text-white md:text-base"
@@ -90,7 +90,7 @@ const footer = [
     </div>
 
     <div class="my-8">
-      <h2 class="text-2xl font-semibold">Social</h2>
+      <h4 class="text-2xl font-semibold">Social</h4>
       <ul class="flex flex-wrap gap-x-2 gap-y-2">
         <li
           v-for="item in social"
@@ -109,7 +109,7 @@ const footer = [
     </div>
 
     <footer class="my-8">
-      <h2 class="text-2xl font-semibold">Helpful</h2>
+      <h5 class="text-2xl font-semibold">Helpful</h5>
       <ul class="flex flex-wrap gap-x-2 gap-y-2">
         <li
           v-for="item in footer"

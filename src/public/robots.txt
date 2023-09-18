@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /bank-accounts
+Disallow: /bank-accounts/
+
+Sitemap: https://emirkabal.com/sitemap.xml
