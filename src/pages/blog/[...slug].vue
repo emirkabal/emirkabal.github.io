@@ -3,6 +3,20 @@ const route = useRoute()
 const { data, pending } = await useAsyncData(route.params.slug.toString(), () =>
   queryContent('blog/' + route.params.slug).findOne()
 )
+
+const title = data.value.title
+const description =
+  data.value.short_description || 'Gönderiyi okumak için ziyaret et.'
+useSeoMeta({
+  titleTemplate: '%s - Emir Kabal',
+  title,
+  ogTitle: title,
+  ogUrl: 'https://emirkabal.com' + data.value._path,
+  twitterTitle: title,
+  description,
+  ogDescription: description,
+  twitterDescription: description
+})
 </script>
 <template>
   <main class="mt-8">
@@ -22,18 +36,18 @@ const { data, pending } = await useAsyncData(route.params.slug.toString(), () =>
             <time class="rounded bg-slate-800/90 px-2 py-1">
               {{ $moment(data.createdAt).locale('tr').format('DD MMMM YYYY') }}
             </time>
-            <div class="flex gap-2" v-if="data.tags && data.tags.length > 0">
-              <span
-                class="rounded bg-slate-800/90 px-2 py-1"
-                v-for="tag in data.tags"
-              >
-                #{{ tag }}
-              </span>
-            </div>
+
+            <span
+              class="rounded bg-slate-800/90 px-2 py-1"
+              v-if="data.tags && data.tags.length > 0"
+              v-for="tag in data.tags"
+            >
+              #{{ tag }}
+            </span>
           </div>
         </header>
         <ContentRenderer
-          class="prose prose-invert max-w-none prose-h2:my-0 prose-h2:text-2xl prose-h2:font-semibold prose-h3:my-2 prose-h3:text-xl prose-p:my-2 prose-p:text-xl prose-a:no-underline prose-img:my-4 prose-img:rounded-xl prose-video:rounded-xl"
+          class="prose prose-invert max-w-none prose-h2:my-0 prose-h2:text-2xl prose-h2:font-semibold prose-h3:my-2 prose-h3:text-xl prose-p:mb-4 prose-p:text-xl prose-a:no-underline prose-img:my-4 prose-img:rounded-xl prose-video:rounded-xl"
           :value="data"
         />
       </article>

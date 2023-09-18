@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="pointer-events-none absolute -z-10 h-screen w-full bg-gradient-to-t from-black from-70% via-black via-70% to-slate-900"
+      class="pointer-events-none absolute inset-0 -z-10 h-screen w-full bg-gradient-to-t from-black from-70% via-black via-70% to-slate-900"
     ></div>
     <div class="mx-auto max-w-2xl px-4 pt-[6vw] md:px-0 lg:pt-[2vw]">
       <Header />

@@ -1,4 +1,5 @@
 <script setup>
+import { useClipboard } from '@vueuse/core'
 const { copy } = useClipboard()
 const accounts = [
   {
@@ -42,6 +43,19 @@ const copyAccount = (account) => {
     copied.value.splice(copied.value.indexOf(account.image), 1)
   }, 2000)
 }
+
+const title = 'Bank Accounts'
+const description = 'Bank accounts for easy to copy details.'
+useSeoMeta({
+  titleTemplate: '%s - Emir Kabal',
+  title,
+  ogTitle: title,
+  ogUrl: 'https://emirkabal.com/bank-accounts',
+  twitterTitle: title,
+  description,
+  ogDescription: description,
+  twitterDescription: description
+})
 </script>
 
 <template>

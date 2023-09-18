@@ -15,16 +15,21 @@
       </div>
       <img
         src="~/assets/images/me.jpg"
+        alt="Emir Kabal"
         loading="lazy"
         class="h-24 w-24 rounded-full md:h-36 md:w-36"
       />
     </header>
-    <header v-else class="rounded-xl bg-slate-800/40 px-4 py-2">
+    <header
+      v-else
+      class="z-10 rounded-xl bg-slate-800/40 px-4 py-2 backdrop-blur-3xl"
+    >
       <ul class="flex items-center gap-2 font-semibold">
         <li class="flex gap-2">
           <NuxtLink to="/" class="transition-opacity hover:opacity-75">
             <img
               src="~/assets/images/me.jpg"
+              alt="Emir Kabal"
               loading="lazy"
               class="h-6 w-6 rounded-full"
             />

@@ -2,7 +2,29 @@
 export default defineNuxtConfig({
   srcDir: 'src',
   devtools: { enabled: true },
-  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', '@tresjs/nuxt'],
+  modules: [
+    [
+      '@nuxt/content',
+      {
+        markdown: {
+          anchorLinks: false
+        },
+        highlight: {
+          theme: 'github-dark',
+          preload: ['diff', 'ts', 'js', 'css', 'json', 'bash', 'vue', 'html']
+        }
+      }
+    ],
+    [
+      '@nuxtjs/tailwindcss',
+      {
+        viewer: false,
+        exposeConfig: true,
+        injectPosition: 'last'
+      }
+    ],
+    '@tresjs/nuxt'
+  ],
   css: [
     '~/assets/css/main.css',
     '@fontsource/inter/400.css',
@@ -16,11 +38,15 @@ export default defineNuxtConfig({
       mode: 'out-in'
     }
   },
-
-  tailwindcss: { viewer: false, exposeConfig: true, injectPosition: 'last' },
-  content: {
-    markdown: {
-      anchorLinks: false
+  nitro: {
+    prerender: {
+      routes: ['/sitemap.xml']
     }
   }
+
+  // vue: {
+  //   compilerOptions: {
+  //     isCustomElement: (tag) => tag.startsWith('Tres')
+  //   }
+  // }
 })

@@ -46,6 +46,19 @@ const groups = computed(() => {
     }
   })
 })
+
+const title = 'Son Gönderiler'
+const description = 'Emir Kabal tarafından yazılan son gönderileri okuyun.'
+useSeoMeta({
+  titleTemplate: '%s - Emir Kabal',
+  title,
+  ogTitle: title,
+  ogUrl: 'https://emirkabal.com/blog',
+  twitterTitle: title,
+  description,
+  ogDescription: description,
+  twitterDescription: description
+})
 </script>
 
 <template>
