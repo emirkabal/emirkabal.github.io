@@ -66,7 +66,7 @@ useSeoMeta({
         <li
           v-for="account in accounts"
           :key="account.image"
-          class="cursor-pointer rounded border border-gray-300 px-4 py-2 transition-colors hover:border-gray-600 dark:border-gray-600 dark:hover:border-white"
+          class="cursor-pointer rounded border border-gray-300 px-4 py-2 transition-colors hover:border-gray-600 dark:border-gray-800 dark:hover:border-gray-200"
           @click="copyAccount(account)"
         >
           <div class="flex items-center gap-4">

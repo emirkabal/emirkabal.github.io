@@ -1,7 +1,8 @@
 ---
 title: 'Modern JavaScript Araçları ve Kütüphaneleri'
 short_description: 'Web geliştiriciler için en iyi JavaScript araçları ve kütüphaneleri.'
-tags: [javascript, yazılım, react, vue, angular, svelte]
+tags:
+  [javascript, framework, web geliştirme, yazılım, react, vue, angular, svelte]
 createdAt: '2023-09-18T11:00:00.000Z'
 ---
 
@@ -17,13 +18,13 @@ React, Facebook tarafından geliştirilen ve kullanıcı arayüzü oluşturmak i
 
 ## 2. Vue.js
 
-Vue.js, hafif ve esnek bir JavaScript çerçevesidir ve özellikle yeni başlayanlar için kolay öğrenilebilir bir seçenek sunar. Vue, bileşen tabanlı bir yapıya sahiptir ve veri bağlama konusunda güçlüdür. Ayrıca, diğer JavaScript kütüphaneleri veya çerçeveleri ile entegrasyonu kolaydır ve mevcut projelere eklemek için idealdir.
+Vue.js, hafif ve esnek bir JavaScript kütüphanesidir ve özellikle yeni başlayanlar için kolay öğrenilebilir bir seçenek sunar. Vue, bileşen tabanlı bir yapıya sahiptir ve veri bağlama konusunda güçlüdür. Ayrıca, diğer JavaScript kütüphaneleri ile entegrasyonu kolaydır ve mevcut projelere eklemek için idealdir.
 
 ![](https://bs-uploads.toptal.io/blackfish-uploads/components/seo/content/og_image_file/og_image/1131364/angular-5-tutorial-325403e130ba3b2c367174b73bb7275a.png)
 
 ## 3. Angular
 
-Angular, Google tarafından geliştirilen bir başka popüler JavaScript çerçevesidir. Tam bir web uygulama çerçevesi olarak tasarlanmıştır ve büyük ve karmaşık projeler için uygundur. Angular, bileşen tabanlı bir yaklaşım sunar ve TypeScript ile yazılır, bu da geliştirme sürecini daha sağlam hale getirir. Dahili olarak pek çok özellik sunar, örneğin yönlendirme, form yönetimi ve veri bağlama gibi.
+Angular, Google tarafından geliştirilen bir başka popüler JavaScript kütüphanesidir. Tam bir web uygulama kütüphanesi olarak tasarlanmıştır ve büyük ve karmaşık projeler için uygundur. Angular, bileşen tabanlı bir yaklaşım sunar ve TypeScript ile yazılır, bu da geliştirme sürecini daha sağlam hale getirir. Dahili olarak pek çok özellik sunar, örneğin yönlendirme, form yönetimi ve veri bağlama gibi.
 
 ![](https://valuelogic.one/blog/wp-content/uploads/2020/11/Svelte-blogpost.png)
 
@@ -35,13 +36,13 @@ Yeni nesil bir JavaScript derleme dilidir ve web uygulamaları oluşturmayı dah
 
 ## 5. Next.js
 
-Next.js, React tabanlı bir JavaScript çerçevesidir ve özellikle SSR (Sunucu Tarafı Rendere) uygulamalar oluşturmak için kullanılır. SEO dostu sayfalar ve performans iyileştirmeleri sağlar. Aynı zamanda veri getirme ve yönlendirme gibi işlemleri basit ve etkili bir şekilde yapmanızı sağlar.
+Next.js, React tabanlı bir JavaScript kütüphanesidir ve özellikle SSR (Sunucu Tarafı Rendere) uygulamalar oluşturmak için kullanılır. SEO dostu sayfalar ve performans iyileştirmeleri sağlar. Aynı zamanda veri getirme ve yönlendirme gibi işlemleri basit ve etkili bir şekilde yapmanızı sağlar.
 
 ![](https://i.ytimg.com/vi/PkdY8vfNxQs/maxresdefault.jpg)
 
 ## 6. Nuxt.js
 
-Nuxt.js, Vue.js tabanlı bir JavaScript çerçevesidir ve özellikle SSR (Sunucu Tarafı Rendere) uygulamaları için tasarlanmıştır. Nuxt.js, Vue.js'nin gücünü alır ve SEO dostu, hızlı yükleme sürelerine sahip uygulamalar oluşturmanıza yardımcı olur. Ayrıca, modüler yapı ve kolay kullanım sunar.
+Nuxt.js, Vue.js tabanlı bir JavaScript kütüphanesidir ve özellikle SSR (Sunucu Tarafı Rendere) uygulamaları için tasarlanmıştır. Nuxt.js, Vue.js'nin gücünü alır ve SEO dostu, hızlı yükleme sürelerine sahip uygulamalar oluşturmanıza yardımcı olur. Ayrıca, modüler yapı ve kolay kullanım sunar.
 
 ![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/iu70z7h4vp482ptvsw3d.png)
 
@@ -53,9 +54,7 @@ Axios, HTTP isteklerini yapmak için kullanılan popüler bir JavaScript kütüp
 
 ## 8. Jest
 
-Jest, JavaScript uygulamalarını test etmek için kullanılan bir test çerçevesidir. Jest, kodu test etmek için basit ve etkili bir yol sunar ve React gibi kütüphanelerle uyumlu olarak çalışır. Otomatik test çalıştırma, kod kapasitesi ve hata ayıklama özellikleri ile geliştiriciler için önemli bir araçtır.
-
----
+Jest, JavaScript uygulamalarını test etmek için kullanılan bir test kütüphanesidir. Jest, kodu test etmek için basit ve etkili bir yol sunar ve React gibi kütüphanelerle uyumlu olarak çalışır. Otomatik test çalıştırma, kod kapasitesi ve hata ayıklama özellikleri ile geliştiriciler için önemli bir araçtır.
 
 ## Sonuç
 

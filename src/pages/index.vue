@@ -77,7 +77,7 @@ const footer = [
       <ul class="grid grid-cols-1 gap-2 md:grid-cols-2">
         <li v-for="post in posts" :key="post.createdAt">
           <NuxtLink
-            class="inline-block w-full rounded border border-gray-300 px-4 py-2 text-gray-600 transition-colors hover:border-gray-600 hover:text-black dark:border-gray-600 dark:text-gray-300 dark:hover:border-white dark:hover:text-white"
+            class="inline-block w-full rounded border border-gray-300 px-4 py-2 text-gray-600 transition-colors hover:border-gray-600 hover:text-black dark:border-gray-800 dark:text-gray-300 dark:hover:border-gray-200 dark:hover:text-white"
             :to="post._path"
           >
             <h3 class="line-clamp-1 md:text-lg">{{ post.title }}</h3>

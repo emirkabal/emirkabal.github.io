@@ -17,7 +17,9 @@ Rickrolling bir dans türü ve internet akımıdır. 1987 yılında Rick Astley'
 
 <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-#### Kaynaklar
+---
+
+**Kaynaklar**
 
 - [Rick Astley - Vikipedi](https://tr.wikipedia.org/wiki/Rick_Astley)
 - [Rick Astley - Never Gonna Give You Up](https://www.youtube.com/watch?v=dQw4w9WgXcQ)

@@ -40,7 +40,9 @@ Bot sizi sunucunuzun yönetim paneline yönlendirdi bu sayfa üzerinde botta bul
 
 Discord, topluluk kurma için tasarlanmış bir anlık mesajlaşma ve dijital dağıtım platformudur. Aralık 2020 tarihi itibarıyla 300 milyondan fazla kayıtlı kullanıcısı ve aylık 140 milyon aktif kullanıcısı vardır. Discord Windows, macOS, Linux, iOS, Android ve Web tarayıcısı üzerinde çalışabilmektedir.
 
-#### Kaynaklar
+---
+
+**Kaynaklar**
 
 - [Kabal's Bot: Topluluğunu Şekillendir](https://kabals.app)
 - [Discord](https://discord.com)
