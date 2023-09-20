@@ -1,7 +1,7 @@
 ---
 title: 'CSS Relative ve Absolute Pozisyonlandırma: Temel Kavramlar ve Kullanım'
 short_description: 'CSS ile relative ve absolute pozisyonlandırma yöntemlerinin anlamı, farkları ve kullanım örnekleri.'
-tags: [css, tasarım, web, geliştirme, relative, absolute]
+tags: [css, tasarım, web geliştirme, relative, absolute]
 createdAt: '2023-09-17T17:57:00.000Z'
 ---
 
@@ -38,3 +38,7 @@ Relative pozisyonlandırma, öğelerin normal belgelik akışı içinde bulunmas
 Absolute pozisyonlandırma ise, öğeleri normal akıştan çıkarır ve diğer öğelere göre konumlandırılmasını sağlar. Özellikle üst öğelerle ilişkilendirilerek kullanılır ve özel konumlandırma gerektiren öğeler için idealdir.
 
 Hangi pozisyonlandırma yönteminin kullanılacağı, projenizin gereksinimlerine ve tasarım hedeflerine bağlıdır. Her iki yöntemin de avantajları ve sınırlamaları vardır ve doğru kullanıldığında güçlü tasarım araçları olabilirler.
+
+## Sonuç
+
+Relative ve absolute pozisyonlandırma, web tasarımında farklı gereksinimlere hizmet eder. Relative pozisyonlandırma, belgelik akışı içinde öğelerin göreceli olarak kaydırılmasına izin verirken, absolute pozisyonlandırma öğeleri bağlı oldukları üst öğelere göre konumlandırır. Hangi yöntemi kullanacağınız, tasarım ihtiyaçlarına bağlıdır ve her iki yöntem de tasarımın esnekliğini artırabilir.

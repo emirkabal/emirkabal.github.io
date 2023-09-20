@@ -4,7 +4,6 @@ const { data } = await useAsyncData<Post[]>(
   'posts',
   () =>
     queryContent('blog')
-      .limit(4)
       .sort({
         createdAt: -1
       })
@@ -78,7 +77,7 @@ useSeoMeta({
         <li v-for="post in group.posts" :key="post._path">
           <NuxtLink
             :to="post._path"
-            class="flex w-full min-w-0 items-center justify-between rounded border border-gray-300 px-4 py-2 text-gray-600 transition-colors hover:border-gray-600 hover:text-black dark:border-gray-600 dark:text-gray-300 dark:hover:border-white dark:hover:text-white md:text-lg"
+            class="flex w-full min-w-0 items-center justify-between rounded border border-gray-300 px-4 py-2 text-gray-600 transition-colors hover:border-gray-600 hover:text-black dark:border-gray-800 dark:text-gray-300 dark:hover:border-gray-200 dark:hover:text-white md:text-lg"
           >
             <span class="line-clamp-1">
               {{ post.title }}

@@ -30,12 +30,14 @@ useSeoMeta({
             {{ data.short_description }}
           </p>
           <div class="flex flex-wrap gap-2">
-            <time class="tag">
+            <time
+              class="self-center font-semibold text-gray-700 dark:text-gray-400"
+            >
               {{ $moment(data.createdAt).locale('tr').format('DD MMMM YYYY') }}
             </time>
 
             <span
-              class="tag"
+              class="inline-block rounded bg-gray-200 px-2 py-1 text-gray-700 dark:bg-slate-800/90 dark:text-gray-300"
               v-if="data.tags && data.tags.length > 0"
               v-for="tag in data.tags"
             >
@@ -54,9 +56,3 @@ useSeoMeta({
     </div>
   </main>
 </template>
-
-<style scoped>
-.tag {
-  @apply inline-block rounded bg-gray-200 px-2 py-1 text-gray-700 dark:bg-slate-800/90 dark:text-gray-300;
-}
-</style>

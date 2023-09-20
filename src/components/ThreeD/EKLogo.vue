@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import {
   OrbitControls,
   GLTFModel,
@@ -9,10 +9,20 @@ const { hasFinishLoading, progress } = await useProgress()
 const { onLoop } = useRenderLoop()
 const threed = ref(null)
 
+withDefaults(
+  defineProps<{
+    size: 'static' | 'auto'
+  }>(),
+  {
+    size: 'auto'
+  }
+)
+
 watchEffect(async () => {
   await nextTick()
   onLoop(({ delta }) => {
     if (threed.value) {
+      // @ts-ignore
       threed.value.rotation.y += delta * 0.2
     }
   })
@@ -24,10 +34,12 @@ onBeforeRouteLeave(() => {
 </script>
 <template>
   <figure
-    class="!pointer-events-none relative mx-auto h-64 w-64 md:pointer-events-auto md:h-full md:w-full"
+    class="!pointer-events-none relative mx-auto md:pointer-events-auto"
     :class="{
       'opacity-0': !threed,
-      'opacity-100': threed
+      'opacity-100': threed,
+      'h-64 w-64': size === 'static',
+      'h-64 w-64 md:h-full md:w-full': size === 'auto'
     }"
   >
     <div
