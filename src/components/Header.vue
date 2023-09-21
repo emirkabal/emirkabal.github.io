@@ -39,14 +39,14 @@
           <span class="text-gray-600 dark:text-gray-300">/</span>
         </li>
         <li
-          v-for="(item, index) in $route.fullPath.split('/').slice(1)"
+          v-for="(item, index) in $route.path.split('/').slice(1)"
           :key="index"
           class="flex items-center gap-2"
         >
           <NuxtLink
             class="line-clamp-1 transition-colors hover:text-gray-600 dark:hover:text-gray-300"
             :to="`${
-              index < $route.fullPath.split('/').slice(1).length - 1
+              index < $route.path.split('/').slice(1).length - 1
                 ? `/${item}`
                 : $route.path
             }`"
