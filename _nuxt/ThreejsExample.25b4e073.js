@@ -1,0 +1,1 @@
+import{_ as e}from"./EKLogo.vue.84b6722b.js";import{_ as r}from"./_plugin-vue_export-helper.c27b6911.js";import{o as t,m as c}from"./entry.adcf8f98.js";import"./client-only.22ce7082.js";import"./index.a6ca5714.js";const s={};function _(m,n){const o=e;return t(),c(o,{size:"static"})}const x=r(s,[["render",_]]);export{x as default};
