@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { Post } from '~/@types'
 const { data } = await useAsyncData<Post[]>(
-  'posts',
+  'all-posts',
   () =>
     queryContent('blog')
       .sort({

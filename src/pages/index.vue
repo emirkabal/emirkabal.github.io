@@ -1,5 +1,5 @@
 <script setup>
-const { data: posts } = await useAsyncData('posts', () =>
+const { data: posts } = await useAsyncData('homepage-posts', () =>
   queryContent('blog')
     .limit(4)
     .sort({
