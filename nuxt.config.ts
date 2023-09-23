@@ -23,6 +23,12 @@ export default defineNuxtConfig({
         injectPosition: 'last'
       }
     ],
+    [
+      '@nuxtjs/color-mode',
+      {
+        classSuffix: ''
+      }
+    ],
     '@tresjs/nuxt'
   ],
   css: [
@@ -32,21 +38,9 @@ export default defineNuxtConfig({
     '@fontsource/inter/600.css',
     '@fontsource/inter/700.css'
   ],
-  app: {
-    pageTransition: {
-      name: 'fade',
-      mode: 'out-in'
-    }
-  },
   nitro: {
     prerender: {
       routes: ['/sitemap.xml']
     }
   }
-
-  // vue: {
-  //   compilerOptions: {
-  //     isCustomElement: (tag) => tag.startsWith('Tres')
-  //   }
-  // }
 })

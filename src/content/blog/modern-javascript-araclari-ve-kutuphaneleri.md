@@ -1,27 +1,13 @@
 ---
 title: 'Modern JavaScript Araçları ve Kütüphaneleri'
 short_description: 'Web geliştiriciler için en iyi JavaScript araçları ve kütüphaneleri.'
-tags:
-  [
-    javascript,
-    framework,
-    web geliştirme,
-    yazılım,
-    react,
-    vue,
-    vite,
-    angular,
-    svelte,
-    next.js,
-    nuxt,
-    jest
-  ]
+tags: [javascript, web, react, vue, vite, angular, svelte, next, nuxt, jest]
 createdAt: '2023-09-18T11:00:00.000Z'
 ---
 
 Web geliştirme dünyası sürekli olarak değişiyor ve gelişiyor. İnternet kullanıcılarına daha iyi deneyimler sunmak ve daha karmaşık uygulamalar oluşturmak için web geliştiricileri, modern JavaScript araçları ve kütüphanelerine bel bağlamaktadır. Bu makalede, web geliştirme alanında kullanılan bazı en iyi ve en yaygın JavaScript araçları ve kütüphanelerini inceleyeceğiz.
 
-![React İlgili Görsel](https://pbs.twimg.com/card_img/1702720984820617216/MB3FzkIm?format=png&name=medium)
+![React İlgili Görsel](https://robertmarshall.dev/static/d71528d312b579dd0449078f8a8f56ab/b5380/reactjs-1.png)
 
 ## 1. React
 

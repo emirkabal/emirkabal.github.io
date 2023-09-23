@@ -29,17 +29,26 @@ useHead({
 <template>
   <NuxtLoadingIndicator />
   <NuxtLayout>
-    <NuxtPage />
+    <NuxtPage
+      :transition="{
+        name: 'fade',
+        mode: 'out-in'
+      }"
+    />
   </NuxtLayout>
 </template>
 
 <style>
-.fade-enter-active,
-.fade-leave-active {
-  @apply transition-all duration-[400ms];
+.fade-enter-active {
+  transition-property: opacity;
+  transition-duration: 800ms;
 }
+.fade-leave-active {
+  opacity: 0;
+}
+
 .fade-enter-from,
 .fade-leave-to {
-  @apply opacity-0;
+  opacity: 0;
 }
 </style>

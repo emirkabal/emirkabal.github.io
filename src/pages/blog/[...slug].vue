@@ -25,7 +25,9 @@ useSeoMeta({
         <header
           class="mb-8 space-y-2 border-b border-b-slate-300 pb-8 dark:border-b-slate-800"
         >
-          <h1 class="text-4xl font-bold">{{ data.title }}</h1>
+          <h1 class="text-4xl font-bold">
+            {{ data.title }}
+          </h1>
           <p class="text-xl text-gray-600 dark:text-gray-300">
             {{ data.short_description }}
           </p>
@@ -37,7 +39,7 @@ useSeoMeta({
             </time>
 
             <span
-              class="inline-block rounded bg-gray-200 px-2 py-1 text-gray-700 dark:bg-slate-800/90 dark:text-gray-300"
+              class="inline-block rounded bg-gray-100 px-2 py-1 text-gray-700 dark:bg-slate-800/90 dark:text-gray-300"
               v-if="data.tags && data.tags.length > 0"
               v-for="tag in data.tags"
             >

@@ -1,7 +1,7 @@
 ---
 title: 'Three.js ile 3D Dünyaları Keşfedin: Web Tabanlı 3D Modellerin Gücü'
-short_description: 'Three.js ile web sayfalarınızı görsel olarak zenginleştirin! 3D grafikler ve animasyonlarla etkileyici web deneyimleri oluşturun.'
-tags: [three.js, tres.js, 3d model, 3d animasyon, web geliştirme, webgl]
+short_description: 'Three.js ile web sayfalarınızı görsel olarak zenginleştirin! 3D modeller ve animasyonlarla etkileyici web deneyimleri oluşturun.'
+tags: [three.js, tres.js, 3d, web, webgl]
 createdAt: '2023-09-20T02:00:00.000Z'
 ---
 

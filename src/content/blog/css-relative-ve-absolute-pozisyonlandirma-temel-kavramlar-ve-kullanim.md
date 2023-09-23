@@ -1,7 +1,7 @@
 ---
 title: 'CSS Relative ve Absolute Pozisyonlandırma: Temel Kavramlar ve Kullanım'
 short_description: 'CSS ile relative ve absolute pozisyonlandırma yöntemlerinin anlamı, farkları ve kullanım örnekleri.'
-tags: [css, tasarım, web geliştirme, relative, absolute]
+tags: [css, tasarım, web, relative, absolute]
 createdAt: '2023-09-17T17:57:00.000Z'
 ---
 

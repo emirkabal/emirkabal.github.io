@@ -67,7 +67,7 @@ const error = ref(false)
       :height="height"
       class="h-full w-full object-contain object-center"
       :class="{
-        'pointer-events-none absolute inset-0 left-0 top-0 -z-50 h-0 w-0 opacity-0':
+        'pointer-events-none absolute inset-0 left-0 top-0 -z-50 !h-0 !w-0 opacity-0':
           !loaded,
         'opacity-100': loaded
       }"
