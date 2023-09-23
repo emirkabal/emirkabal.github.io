@@ -16,7 +16,7 @@ defineProps<{
     <button
       v-if="code"
       @click="copy(code)"
-      class="absolute right-0 top-0 m-2 select-none text-gray-600 transition-colors hover:text-gray-300"
+      class="absolute right-0 top-0 select-none rounded-b-xl bg-[#24292e] p-2 text-gray-600 transition-colors hover:text-gray-300"
     >
       <IconsClipboard class="h-6 w-6" />
     </button>

@@ -81,4 +81,4 @@ Eğer daha fazla örneğe ihtiyacınız varsa [MDN - Array.map()](https://develo
 
 JavaScript'in `map()` fonksiyonu, dizileri işlemek ve dönüştürmek için güçlü bir araçtır. Bu yazıda, temel kullanımı ve pratik örnekleri gördük. `map()` fonksiyonunu kullanarak verileri daha düzenli ve işlenmesi kolay bir şekilde yönetebilirsiniz. Bu nedenle, JavaScript projelerinizde bu işlevi kullanmayı düşünün ve veri işleme süreçlerinizi basitleştirin.
 
-Umarız bu yazı, JavaScript `map()` fonksiyonunu daha iyi anlamanıza ve projelerinizde kullanmanıza yardımcı olur. İyi kodlamalar!
+Umarım bu yazı, JavaScript `map()` fonksiyonunu daha iyi anlamanıza ve projelerinizde kullanmanıza yardımcı olur. İyi kodlamalar!
