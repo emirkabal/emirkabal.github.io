@@ -7,11 +7,11 @@ createdAt: '2023-09-20T02:00:00.000Z'
 
 Günümüzde web geliştirme dünyası, kullanıcı deneyimini geliştirmek ve etkilemek için sürekli olarak yeni teknolojileri keşfetmektedir. Bu teknolojilerden biri de Three.js'dir. Three.js, web sayfalarına 3D grafikler ve animasyonlar eklemek için güçlü bir JavaScript kütüphanesidir. Bu yazıda, Three.js hakkında temel bilgileri ve kullanımını anlatacağım ve neden web geliştiricileri için önemli bir araç olduğunu açıklayacağım.
 
-**Three.js Nedir?**
+## Three.js Nedir?
 
 Three.js, WebGL (Web Graphics Library) teknolojisine dayalı bir 3D grafik kütüphanesidir. WebGL, web tarayıcıları üzerinde yüksek performanslı 3D grafikler oluşturmanıza olanak tanır. Three.js, bu güçlü teknolojiyi daha erişilebilir hale getirir ve web geliştiricilerine 3D dünyalar oluşturma yeteneği sunar.
 
-**Neden Three.js Kullanmalısınız?**
+### Neden Three.js Kullanmalısınız?
 
 1. **Kolay Kullanım**: Three.js, 3D grafikler oluşturmayı kolaylaştıran birçok hazır işlev ve özellik içerir. Karmaşık matematiksel hesaplamaları atlayarak, geliştiricilerin hızla etkileyici 3D sahneler oluşturmasına olanak tanır.
 
@@ -21,7 +21,7 @@ Three.js, WebGL (Web Graphics Library) teknolojisine dayalı bir 3D grafik küt�
 
 4. **Esneklik ve Özelleştirme**: Three.js, özelleştirme için geniş bir imkan sunar. 3D sahnelerinizi istediğiniz gibi tasarlayabilir ve özelleştirebilirsiniz.
 
-**Nasıl Başlanır?**
+### Nasıl Başlanır?
 
 Three.js kullanmaya başlamak için aşağıdaki adımları izleyebilirsiniz:
 
@@ -31,15 +31,15 @@ Three.js kullanmaya başlamak için aşağıdaki adımları izleyebilirsiniz:
 4. Animasyonlar Ekleyin.
 5. Tarayıcıda Görüntüleyin ve Test Edin.
 
-## Tres.js: Three.js ve Vue'nun Muhteşem Gücüyle Oluşturulan 3D Model
+### Tres.js: Three.js ve Vue'nun Muhteşem Gücüyle Oluşturulan 3D Model
 
 Tres.js, [Vue.js](/blog/modern-javascript-araclari-ve-kutuphaneleri#_2-vuejs) ve Three.js'in birleşimiyle ortaya çıkan güçlü bir 3D grafik kütüphanesidir.
 
-**Tres.js Nedir?**
+### Tres.js Nedir?
 
 Tres.js, web tabanlı 3D grafikler oluşturmak için kullanılan açık kaynaklı bir kütüphanedir. [Vue.js](/blog/modern-javascript-araclari-ve-kutuphaneleri#_2-vuejs) ve Three.js'in en iyi özelliklerini birleştirir ve web geliştiricilerine güçlü bir 3D grafik oluşturma yeteneği sunar.
 
-**Neden Tres.js Kullanmalısınız?**
+### Neden Tres.js Kullanmalısınız?
 
 1. **Kolay Entegrasyon**: Tres.js, [Vue.js](/blog/modern-javascript-araclari-ve-kutuphaneleri#_2-vuejs) ile sorunsuz bir şekilde entegre edilir, böylece Vue projelerinize hızlıca 3D modeller ekleyebilirsiniz.
 
@@ -47,13 +47,13 @@ Tres.js, web tabanlı 3D grafikler oluşturmak için kullanılan açık kaynakl�
 
 3. **Güçlü 3D Grafikler**: Three.js'in muhteşem gücünü kullanarak karmaşık 3D sahneler oluşturabilirsiniz.
 
-**Tres.js ile Oluşturulan 3D Model**
+### Tres.js ile Oluşturulan 3D Model
 
 Aşağıda, Tres.js kullanılarak oluşturulan etkileyici bir 3D modelin örneği:
 
 :ThreejsExample
 
-**Sonuç**
+### Sonuç
 
 Tres.js, web geliştiricilerinin 3D grafikler ve animasyonlar eklemesi için güçlü bir araçtır. Web sayfalarınızı daha etkileyici hale getirmek, oyunlar oluşturmak veya eğitim materyalleri sunmak için kullanabilirsiniz. Ayrıca, [Vue.js](/blog/modern-javascript-araclari-ve-kutuphaneleri#_2-vuejs) ve Three.js'in birleşimi olan Tres.js sayesinde, bu güçlü yetenekleri Vue projelerinize de kolayca entegre edebilirsiniz. Başlamak için zaman ayırın ve web tabanlı 3D dünyaların kapılarını açın!
 

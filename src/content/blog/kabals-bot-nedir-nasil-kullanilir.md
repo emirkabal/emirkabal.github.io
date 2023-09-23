@@ -5,11 +5,9 @@ tags: [kabalsbot, discord]
 createdAt: '2022-06-24T20:08:00.888Z'
 ---
 
-## Kabal's Bot nedir ne işe yarar?
-
 Kabal's Bot, Discord sunucularınızı daha kolay yönetmenizi ve daha güvenli bir yer haline getirmenize olanak tanır. Aynı zamanda birbirinden farklı eğlence ve şarkı komutları ile Discord içerisinde herhangi bir bot olmadan ulaşamayacağınız şeyleri yapmanızı sağlar. Kabal's Bot tamamıyla topluluk kullanıcıları ve moderatörleri için tasarlanmıştır.
 
-## Kabal's Bot'u nasıl kullanabilirim?
+### Kabal's Bot'u nasıl kullanabilirim?
 
 Kabal's Bot'u kullanmanız için öncelikle bir Discord sunucusu sahibi veya bir sunucuda yönetici düzeyinde yetkili olmanız gerekmektedir; Daha sonrasında Kabal's Bot'un internet sayfasını [buraya](https://kabals.app) tıklayarak ziyaret edin ardından ise önünüze çıkan kırmızı ile belirtilen kutucuk içerisinde bulunan "Topluluğuna Ekle" tuşuna basıyorsunuz.
 

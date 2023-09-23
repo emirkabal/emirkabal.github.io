@@ -56,18 +56,18 @@ const footer = [
 ]
 </script>
 <template>
-  <main>
+  <div>
     <div class="my-8">
       <ContentDoc
         :head="false"
-        class="prose max-w-none dark:prose-invert prose-h2:my-0 prose-h2:font-semibold prose-p:text-xl prose-a:no-underline"
+        class="prose max-w-none dark:prose-invert prose-headings:my-0 prose-headings:font-semibold prose-h2:text-xl prose-p:leading-6 prose-a:no-underline sm:prose-h2:text-2xl sm:prose-p:text-xl"
         path="/about"
       />
     </div>
 
     <div class="my-8" v-if="posts && posts.length > 0">
       <div class="mb-2 flex items-center gap-2">
-        <h3 class="text-2xl font-semibold">Blog</h3>
+        <h3 class="text-xl font-semibold sm:text-2xl">Blog</h3>
         <NuxtLink
           to="/blog"
           class="mt-1 text-sm text-gray-600 transition-colors hover:text-black dark:text-gray-300 dark:hover:text-white md:text-base"
@@ -80,8 +80,8 @@ const footer = [
             class="inline-block w-full rounded border border-gray-300 px-4 py-2 text-gray-600 transition-colors hover:border-gray-600 hover:text-black dark:border-gray-800 dark:text-gray-300 dark:hover:border-gray-200 dark:hover:text-white"
             :to="post._path"
           >
-            <h3 class="line-clamp-1 md:text-lg">{{ post.title }}</h3>
-            <time class="line-clamp-1 text-xs">
+            <h3 class="line-clamp-1 sm:text-lg">{{ post.title }}</h3>
+            <time class="line-clamp-1 text-xs font-semibold">
               {{ $moment(post.createdAt).locale('tr').format('DD MMM YYYY') }}
             </time>
           </NuxtLink>
@@ -90,12 +90,12 @@ const footer = [
     </div>
 
     <div class="my-8">
-      <h4 class="text-2xl font-semibold">Social</h4>
-      <ul class="flex flex-wrap gap-x-2 gap-y-2">
+      <h4 class="text-xl font-semibold sm:text-2xl">Social</h4>
+      <ul class="flex flex-wrap gap-x-2 gap-y-0.5">
         <li
           v-for="item in social"
           :key="item.name"
-          class="flex-shrink-0 text-xl text-gray-600 transition-colors hover:text-black dark:text-gray-300 dark:hover:text-white"
+          class="flex-shrink-0 text-gray-600 transition-colors hover:text-black dark:text-gray-300 dark:hover:text-white sm:text-xl"
         >
           <a
             :href="item.url"
@@ -109,12 +109,12 @@ const footer = [
     </div>
 
     <footer class="my-8">
-      <h5 class="text-2xl font-semibold">Helpful</h5>
-      <ul class="flex flex-wrap gap-x-2 gap-y-2">
+      <h5 class="text-xl font-semibold sm:text-2xl">Helpful</h5>
+      <ul class="flex flex-wrap gap-x-2 gap-y-0.5">
         <li
           v-for="item in footer"
           :key="item.name"
-          class="flex-shrink-0 text-xl text-gray-600 transition-colors hover:text-black dark:text-gray-300 dark:hover:text-white"
+          class="flex-shrink-0 text-gray-600 transition-colors hover:text-black dark:text-gray-300 dark:hover:text-white sm:text-xl"
         >
           <a
             v-if="item.url.startsWith('http')"
@@ -128,5 +128,5 @@ const footer = [
         </li>
       </ul>
     </footer>
-  </main>
+  </div>
 </template>
