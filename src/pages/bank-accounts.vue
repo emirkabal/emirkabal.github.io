@@ -59,9 +59,9 @@ useSeoMeta({
 </script>
 
 <template>
-  <main class="mt-8">
+  <div class="mt-8">
     <ClientOnly>
-      <h1 class="mb-4 text-3xl font-bold">Bank Accounts</h1>
+      <h1 class="mb-4 text-2xl font-bold sm:text-3xl">Bank Accounts</h1>
       <ul class="space-y-2">
         <li
           v-for="account in accounts"
@@ -74,15 +74,15 @@ useSeoMeta({
               :src="`/images/bank/${account.image}.jpg`"
               :alt="account.name"
               loading="lazy"
-              class="h-10 w-10 rounded-lg"
+              class="h-10 w-10 rounded-lg border dark:border-none"
             />
             <div class="flex flex-col">
-              <span class="text-lg font-semibold leading-6">{{
+              <span class="font-semibold leading-6 sm:text-lg">{{
                 account.name
               }}</span>
               <span
                 v-if="copied.includes(account.image)"
-                class="text-sm text-green-400"
+                class="text-sm text-green-500"
                 >Copied!</span
               >
               <span v-else class="text-sm text-gray-600 dark:text-gray-300"
@@ -93,25 +93,5 @@ useSeoMeta({
         </li>
       </ul>
     </ClientOnly>
-  </main>
+  </div>
 </template>
-
-<style>
-.transition-enter-active {
-  transition:
-    opacity 0.3s ease-in-out,
-    transform 0.3s ease-in-out;
-}
-
-.transition-enter-from,
-.transition-leave-to {
-  opacity: 0;
-  transform: translateY(-8px);
-}
-
-.transition-enter-to,
-.transition-leave-from {
-  opacity: 1;
-  transform: translateY(0);
-}
-</style>

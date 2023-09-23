@@ -32,7 +32,7 @@ html.dark::-webkit-scrollbar-thumb:hover {
 }
 
 .prose :where(iframe):not(:where([class~='not-prose'] *)) {
-  @apply aspect-video h-auto w-full rounded-xl;
+  @apply aspect-video h-auto w-full rounded-xl border dark:border-transparent;
 }
 
 /* Theme change animation */

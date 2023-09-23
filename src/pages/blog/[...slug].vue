@@ -19,42 +19,40 @@ useSeoMeta({
 })
 </script>
 <template>
-  <main class="mt-8">
-    <div v-if="data">
-      <article class="mb-24">
-        <header
-          class="mb-8 space-y-2 border-b border-b-slate-300 pb-8 dark:border-b-slate-800"
-        >
-          <h1 class="text-4xl font-bold">
-            {{ data.title }}
-          </h1>
-          <p class="text-xl text-gray-600 dark:text-gray-300">
-            {{ data.short_description }}
-          </p>
-          <div class="flex flex-wrap gap-2">
-            <time
-              class="self-center font-semibold text-gray-700 dark:text-gray-400"
-            >
-              {{ $moment(data.createdAt).locale('tr').format('DD MMMM YYYY') }}
-            </time>
+  <div class="mt-8">
+    <article v-if="data" class="mb-24">
+      <header
+        class="mb-8 space-y-2 border-b border-b-slate-300 pb-8 dark:border-b-slate-800"
+      >
+        <h1 class="text-2xl font-bold sm:text-4xl">
+          {{ data.title }}
+        </h1>
+        <p class="text-gray-600 dark:text-gray-300">
+          {{ data.short_description }}
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <time
+            class="self-center text-sm font-semibold text-gray-700 dark:text-gray-400"
+          >
+            {{ $moment(data.createdAt).locale('tr').format('DD MMMM YYYY') }}
+          </time>
 
-            <span
-              class="inline-block rounded bg-gray-100 px-2 py-1 text-gray-700 dark:bg-slate-800/90 dark:text-gray-300"
-              v-if="data.tags && data.tags.length > 0"
-              v-for="tag in data.tags"
-            >
-              #{{ tag }}
-            </span>
-          </div>
-        </header>
-        <ContentRenderer
-          class="prose max-w-none dark:prose-invert prose-h2:my-0 prose-h2:text-2xl prose-h2:font-semibold prose-h3:my-2 prose-h3:text-xl prose-p:mb-4 prose-p:text-xl prose-a:no-underline prose-img:my-4 prose-img:rounded-xl prose-img:shadow-md prose-video:rounded-xl"
-          :value="data"
-        />
-      </article>
-    </div>
+          <span
+            class="inline-block rounded bg-gray-100 px-2 py-1 text-sm text-gray-700 dark:bg-slate-800/90 dark:text-gray-300"
+            v-if="data.tags && data.tags.length > 0"
+            v-for="tag in data.tags"
+          >
+            #{{ tag }}
+          </span>
+        </div>
+      </header>
+      <ContentRenderer
+        class="prose max-w-none dark:prose-invert prose-headings:mb-2 prose-headings:mt-4 prose-a:no-underline prose-img:rounded-xl prose-img:border dark:prose-img:border-transparent"
+        :value="data"
+      />
+    </article>
     <div v-else>
-      <div class="text-xl">This post could not be found.</div>
+      <div class="sm:text-xl">This post could not be found.</div>
     </div>
-  </main>
+  </div>
 </template>

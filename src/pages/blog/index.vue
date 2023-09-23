@@ -62,22 +62,22 @@ useSeoMeta({
 </script>
 
 <template>
-  <main class="mt-8">
-    <h1 class="text-3xl font-bold">Blog</h1>
-    <h2 class="text-xl text-gray-600 dark:text-gray-300">Son Gönderiler</h2>
+  <div class="mt-8">
+    <h1 class="text-2xl font-bold sm:text-3xl">Blog</h1>
+    <h2 class="text-gray-600 dark:text-gray-300 sm:text-xl">Son Gönderiler</h2>
     <div
       class="my-8 space-y-4"
       v-for="group in groups"
       :key="group.date.toString()"
     >
-      <h6 class="text-2xl font-bold">
+      <h6 class="text-xl font-bold sm:text-2xl">
         {{ $moment(group.date).locale('tr').format('MMMM YYYY') }}
       </h6>
       <ul class="space-y-2">
         <li v-for="post in group.posts" :key="post._path">
           <NuxtLink
             :to="post._path"
-            class="flex w-full min-w-0 items-center justify-between rounded border border-gray-300 px-4 py-2 text-gray-600 transition-colors hover:border-gray-600 hover:text-black dark:border-gray-800 dark:text-gray-300 dark:hover:border-gray-200 dark:hover:text-white md:text-lg"
+            class="flex w-full min-w-0 items-center justify-between rounded border border-gray-300 px-4 py-2 text-gray-600 transition-colors hover:border-gray-600 hover:text-black dark:border-gray-800 dark:text-gray-300 dark:hover:border-gray-200 dark:hover:text-white sm:text-lg"
           >
             <span class="line-clamp-1">
               {{ post.title }}
@@ -89,5 +89,5 @@ useSeoMeta({
         </li>
       </ul>
     </div>
-  </main>
+  </div>
 </template>
