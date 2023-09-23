@@ -1,1 +1,0 @@
-.transition-enter-active{transition:opacity .3s ease-in-out,transform .3s ease-in-out}.transition-enter-from,.transition-leave-to{opacity:0;transform:translateY(-8px)}.transition-enter-to,.transition-leave-from{opacity:1;transform:translateY(0)}
