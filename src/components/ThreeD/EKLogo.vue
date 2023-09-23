@@ -11,7 +11,7 @@ const threed = ref(null)
 
 withDefaults(
   defineProps<{
-    size: 'static' | 'auto'
+    size?: 'static' | 'auto'
   }>(),
   {
     size: 'auto'

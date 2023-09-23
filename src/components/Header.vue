@@ -1,3 +1,14 @@
+<script setup>
+const height = ref('144px')
+const headerMain = ref(null)
+
+watch(headerMain, () => {
+  if (headerMain.value && headerMain.value.clientHeight) {
+    height.value = headerMain.value.clientHeight + 'px'
+  }
+})
+</script>
+
 <template>
   <Transition
     enter-active-class="duration-700 ease-out"
@@ -7,6 +18,7 @@
   >
     <header
       v-if="$route.name === 'index'"
+      ref="headerMain"
       class="flex items-center justify-between"
     >
       <div class="tracking-wide">
@@ -24,11 +36,11 @@
     </header>
     <header
       v-else
-      class="z-10 rounded-xl bg-gray-200 px-4 py-2 shadow backdrop-blur-3xl dark:bg-slate-800/40"
+      class="z-10 rounded-xl bg-gray-100 px-4 py-2 shadow backdrop-blur-3xl dark:bg-slate-800/40"
     >
       <ul class="flex items-center gap-2 font-semibold">
         <li class="flex flex-shrink-0 items-center gap-2">
-          <NuxtLink to="/" class="transition-opacity hover:opacity-75">
+          <NuxtLink to="/" class="transition-opacity hover:opacity-80">
             <img
               src="~/assets/images/me.jpg"
               alt="Emir Kabal"
@@ -36,7 +48,7 @@
               class="h-6 w-6 rounded-full"
             />
           </NuxtLink>
-          <span class="text-gray-600 dark:text-gray-300">/</span>
+          <span class="text-gray-400 dark:text-gray-500">/</span>
         </li>
         <li
           v-for="(item, index) in $route.path.split('/').slice(1)"
@@ -44,7 +56,7 @@
           class="flex items-center gap-2"
         >
           <NuxtLink
-            class="line-clamp-1 transition-colors hover:text-gray-600 dark:hover:text-gray-300"
+            class="line-clamp-1 text-gray-600 transition-colors hover:text-gray-500 dark:text-gray-300 dark:hover:text-white"
             :to="`${
               index < $route.path.split('/').slice(1).length - 1
                 ? `/${item}`
@@ -53,7 +65,7 @@
           >
             {{ item }}
           </NuxtLink>
-          <span class="text-gray-600 dark:text-gray-300">{{
+          <span class="text-gray-400 dark:text-gray-500">{{
             index < $route.fullPath.split('/').slice(1).length - 1 ? '/' : ''
           }}</span>
         </li>

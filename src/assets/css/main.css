@@ -1,33 +1,56 @@
-@tailwind base;
-@tailwind utilities;
-
-@layer base {
-  html,
-  body {
-    scroll-behavior: smooth;
-    @apply antialiased;
-  }
-  body {
-    @apply bg-white text-black dark:bg-black dark:text-white;
-  }
-  /* scrollbar */
-  ::-webkit-scrollbar {
-    width: 6px;
-  }
-  ::-webkit-scrollbar-track {
-    @apply bg-neutral-100 dark:bg-neutral-900;
-  }
-  ::-webkit-scrollbar-thumb {
-    @apply rounded-full bg-neutral-400 dark:bg-slate-800;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    @apply bg-neutral-500 dark:bg-slate-700;
-  }
-  /* scrollbar */
+html {
+  overflow-y: scroll;
+  overscroll-behavior: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 
-@layer utilities {
-  .prose :where(iframe):not(:where([class~='not-prose'] *)) {
-    @apply aspect-video h-auto w-full rounded-xl;
-  }
+body {
+  @apply bg-white text-black antialiased dark:bg-black dark:text-white;
+}
+
+/* Scrollbar */
+
+html::-webkit-scrollbar {
+  @apply w-1.5 bg-transparent;
+}
+html::-webkit-scrollbar-track {
+  @apply bg-none;
+}
+html::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-neutral-300;
+}
+html::-webkit-scrollbar-thumb:hover {
+  @apply bg-neutral-400;
+}
+html.dark::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-slate-800;
+}
+html.dark::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-700;
+}
+
+.prose :where(iframe):not(:where([class~='not-prose'] *)) {
+  @apply aspect-video h-auto w-full rounded-xl;
+}
+
+/* Theme change animation */
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+::view-transition-old(root) {
+  z-index: 1;
+}
+::view-transition-new(root) {
+  z-index: 1000;
+}
+.dark::view-transition-old(root) {
+  z-index: 1000;
+}
+.dark::view-transition-new(root) {
+  z-index: 1;
 }
