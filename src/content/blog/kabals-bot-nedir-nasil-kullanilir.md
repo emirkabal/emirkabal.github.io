@@ -5,7 +5,7 @@ tags: [kabalsbot, discord]
 createdAt: '2022-06-24T20:08:00.888Z'
 ---
 
-Kabal's Bot, Discord sunucularınızı daha kolay yönetmenizi ve daha güvenli bir yer haline getirmenize olanak tanır. Aynı zamanda birbirinden farklı eğlence ve şarkı komutları ile Discord içerisinde herhangi bir bot olmadan ulaşamayacağınız şeyleri yapmanızı sağlar. Kabal's Bot tamamıyla topluluk kullanıcıları ve moderatörleri için tasarlanmıştır.
+Kabal's Bot, Discord sunucularınızı daha kolay yönetmenizi ve daha güvenli bir yer haline getirmenize olanak tanır. Aynı zamanda birbirinden farklı eğlence ve müzik komutları ile sunucunuz içerisinde başka herhangi bir bota ihtiyaç duyulmamasını sağlar. Kabal's Bot tamamıyla topluluk kullanıcıları ve moderatörleri için tasarlanmıştır.
 
 ### Kabal's Bot'u nasıl kullanabilirim?
 

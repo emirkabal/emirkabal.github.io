@@ -42,9 +42,6 @@ useSeoMeta({
     <div class="relative h-96 w-full">
       <ThreeDEKLogo />
       <div class="relative">
-        <div
-          class="pointer-events-none absolute inset-0 left-1/2 top-1/2 -z-10 hidden h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-t from-green-400 to-violet-600 blur-3xl dark:block md:h-96 md:w-96"
-        ></div>
         <h1 class="my-4 text-2xl font-bold sm:text-3xl">Logo</h1>
         <div class="flex gap-2">
           <div class="w-full">
@@ -58,7 +55,7 @@ useSeoMeta({
             >
               <img
                 :src="LogoBlack"
-                class="mx-auto h-auto w-full max-w-[140px]"
+                class="mx-auto h-auto w-full max-w-[170px]"
               />
             </div>
             <div class="mt-2 text-center">
@@ -91,7 +88,7 @@ useSeoMeta({
             >
               <img
                 :src="LogoWhite"
-                class="mx-auto h-auto w-full max-w-[140px]"
+                class="mx-auto h-auto w-full max-w-[170px]"
               />
             </div>
             <div class="mt-2 text-center">
