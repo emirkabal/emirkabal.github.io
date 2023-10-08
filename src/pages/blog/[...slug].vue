@@ -22,9 +22,9 @@ useSeoMeta({
   <div class="mt-8">
     <article v-if="data" class="mb-24">
       <header
-        class="mb-8 space-y-2 border-b border-b-slate-300 pb-8 dark:border-b-slate-800"
+        class="mb-8 space-y-2 border-b border-b-gray-200 pb-8 dark:border-b-neutral-800"
       >
-        <h1 class="text-2xl font-bold sm:text-4xl">
+        <h1 class="text-2xl font-black sm:text-4xl">
           {{ data.title }}
         </h1>
         <p class="text-gray-600 dark:text-gray-300">
@@ -32,13 +32,13 @@ useSeoMeta({
         </p>
         <div class="flex flex-wrap gap-2">
           <time
-            class="self-center text-sm font-semibold text-gray-700 dark:text-gray-400"
+            class="self-center text-sm font-bold text-neutral-700 dark:text-neutral-300"
           >
-            {{ $moment(data.createdAt).locale('tr').format('DD MMMM YYYY') }}
+            {{ $moment(data.createdAt).locale('tr').format('D MMMM YYYY') }}
           </time>
 
           <span
-            class="inline-block rounded bg-gray-100 px-2 py-1 text-sm text-gray-700 dark:bg-slate-800/90 dark:text-gray-300"
+            class="inline-block rounded bg-gray-100 px-2 py-1 text-sm text-gray-700 dark:bg-neutral-800 dark:text-neutral-300"
             v-if="data.tags && data.tags.length > 0"
             v-for="tag in data.tags"
           >
@@ -47,7 +47,7 @@ useSeoMeta({
         </div>
       </header>
       <ContentRenderer
-        class="prose max-w-none dark:prose-invert prose-headings:mb-2 prose-headings:mt-4 prose-a:no-underline prose-img:rounded-xl prose-img:border dark:prose-img:border-transparent"
+        class="prose max-w-none dark:prose-invert prose-headings:mb-2 prose-headings:mt-4 prose-a:no-underline prose-img:rounded-xl prose-img:border dark:prose-img:border-transparent dark:prose-hr:border-neutral-800"
         :value="data"
       />
     </article>

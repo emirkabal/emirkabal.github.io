@@ -66,7 +66,7 @@ useSeoMeta({
         <li
           v-for="account in accounts"
           :key="account.image"
-          class="cursor-pointer rounded border border-gray-300 px-4 py-2 transition-colors hover:border-gray-600 dark:border-gray-800 dark:hover:border-gray-200"
+          class="inline-block w-full cursor-pointer rounded border border-gray-300 bg-gray-50/40 px-4 py-2 text-gray-600 transition-colors hover:border-gray-400 hover:text-black dark:border-neutral-800 dark:bg-neutral-800/40 dark:text-gray-300 dark:hover:border-neutral-700 dark:hover:text-white"
           @click="copyAccount(account)"
         >
           <div class="flex items-center gap-4">
@@ -74,20 +74,23 @@ useSeoMeta({
               :src="`/images/bank/${account.image}.jpg`"
               :alt="account.name"
               loading="lazy"
-              class="h-10 w-10 rounded-lg border dark:border-none"
+              class="h-10 w-10 rounded-lg border dark:border-transparent"
             />
-            <div class="flex flex-col">
-              <span class="font-semibold leading-6 sm:text-lg">{{
-                account.name
-              }}</span>
-              <span
-                v-if="copied.includes(account.image)"
-                class="text-sm text-green-500"
-                >Copied!</span
-              >
-              <span v-else class="text-sm text-gray-600 dark:text-gray-300"
-                >Click here to copy</span
-              >
+            <div>
+              <h3 class="font-semibold">
+                {{ account.name }}
+              </h3>
+              <p class="-mt-0.5 text-sm">
+                <span
+                  v-if="copied.includes(account.image)"
+                  class="text-green-500"
+                >
+                  Copied!
+                </span>
+                <span v-else class="text-gray-600 dark:text-gray-300">
+                  Click here to copy
+                </span>
+              </p>
             </div>
           </div>
         </li>

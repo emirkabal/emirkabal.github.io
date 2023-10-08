@@ -77,13 +77,13 @@ useSeoMeta({
         <li v-for="post in group.posts" :key="post._path">
           <NuxtLink
             :to="post._path"
-            class="flex w-full min-w-0 items-center justify-between rounded border border-gray-300 px-4 py-2 text-gray-600 transition-colors hover:border-gray-600 hover:text-black dark:border-gray-800 dark:text-gray-300 dark:hover:border-gray-200 dark:hover:text-white sm:text-lg"
+            class="dark:hover:text-whiteg flex w-full min-w-0 cursor-pointer items-center justify-between rounded border border-gray-300 bg-gray-50/40 px-4 py-2 text-gray-600 transition-colors hover:border-gray-400 hover:text-black dark:border-neutral-800 dark:bg-neutral-800/40 dark:text-gray-300 dark:hover:border-neutral-700"
           >
             <span class="line-clamp-1">
               {{ post.title }}
             </span>
             <time class="flex-shrink-0 pl-4 text-xs font-semibold">
-              {{ $moment(post.createdAt).locale('tr').format('DD MMM') }}
+              {{ $moment(post.createdAt).locale('tr').format('D MMM') }}
             </time>
           </NuxtLink>
         </li>

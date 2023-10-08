@@ -50,19 +50,19 @@ const toggleDark = (event) => {
 }
 </script>
 <template>
-  <div class="fixed bottom-8 left-8 hidden lg:block">
-    <button
-      @click="toggleDark"
-      class="group relative flex h-10 w-10 items-center justify-center rounded-full p-2 transition-colors duration-500"
-    >
-      <ClientOnly>
+  <ClientOnly>
+    <div class="fixed bottom-8 left-8 hidden lg:block">
+      <button
+        @click="toggleDark"
+        class="group relative flex h-10 w-10 items-center justify-center rounded-full p-2 transition-colors duration-500"
+      >
         <IconsSun v-if="isDark" class="absolute h-7 w-7 text-white" />
         <IconsMoon v-else class="absolute h-7 w-7 text-gray-800" />
-      </ClientOnly>
 
-      <div
-        class="absolute left-0 right-0 top-0 -z-10 h-5 w-5 animate-pulse rounded-full bg-gradient-to-tl from-lime-300 to-violet-400 blur-lg transition-all group-hover:blur-md dark:from-lime-500 dark:to-violet-800 md:h-10 md:w-10"
-      ></div>
-    </button>
-  </div>
+        <div
+          class="absolute left-0 right-0 top-0 -z-10 h-5 w-5 animate-pulse rounded-full bg-gradient-to-tl from-lime-300 to-violet-400 blur-lg transition-all group-hover:blur-md dark:from-lime-500 dark:to-violet-800 md:h-10 md:w-10"
+        ></div>
+      </button>
+    </div>
+  </ClientOnly>
 </template>

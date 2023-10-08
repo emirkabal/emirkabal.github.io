@@ -45,7 +45,7 @@ const error = ref(false)
   >
     <div
       v-if="!loaded || error"
-      class="relative aspect-video rounded-xl bg-gray-200 dark:bg-slate-800"
+      class="relative aspect-video rounded-xl bg-gray-100 dark:bg-neutral-800"
       :class="{
         'animate-pulse': !loaded && !error
       }"

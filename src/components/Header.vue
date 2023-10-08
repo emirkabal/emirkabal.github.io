@@ -19,24 +19,26 @@ watch(headerMain, () => {
     <nav
       v-if="$route.name === 'index'"
       ref="headerMain"
-      class="flex items-center justify-between"
+      class="flex flex-row-reverse items-center justify-end sm:flex-row sm:justify-between"
     >
       <div class="tracking-wide">
-        <h1 class="text-4xl font-bold sm:text-5xl">Emir Kabal</h1>
-        <p class="text-base text-gray-600 dark:text-gray-300 sm:text-xl">
-          Full-stack developer
+        <h1 class="text-xl font-black sm:text-4xl">Emir Kabal</h1>
+        <p
+          class="text-sm leading-4 text-gray-700 dark:text-gray-300 sm:text-base"
+        >
+          A full-stack software developer from Turkey.
         </p>
       </div>
       <img
         src="~/assets/images/me.jpg"
         alt="Emir Kabal"
         loading="lazy"
-        class="h-24 w-24 rounded-full sm:h-36 sm:w-36"
+        class="mr-4 h-16 w-16 rounded-full sm:mr-0"
       />
     </nav>
     <nav
       v-else
-      class="z-10 rounded-lg border bg-gray-100/60 px-4 py-2 backdrop-blur-3xl dark:border-transparent dark:bg-slate-800/40"
+      class="z-10 rounded-lg border border-gray-300 bg-gray-50 px-4 py-2 backdrop-blur-3xl dark:border-neutral-800 dark:bg-neutral-800/60"
     >
       <ul class="flex items-center gap-2 font-semibold">
         <li class="flex flex-shrink-0 items-center gap-2">
@@ -48,7 +50,9 @@ watch(headerMain, () => {
               class="h-6 w-6 rounded-full"
             />
           </NuxtLink>
-          <span class="text-gray-400 dark:text-gray-600">/</span>
+          <span class="font-semibold text-gray-400 dark:text-neutral-600"
+            >/</span
+          >
         </li>
         <li
           v-for="(item, index) in $route.path.split('/').slice(1)"
@@ -56,7 +60,7 @@ watch(headerMain, () => {
           class="flex items-center gap-2"
         >
           <NuxtLink
-            class="line-clamp-1 text-gray-800 transition-colors dark:text-gray-100"
+            class="line-clamp-1 text-gray-800 transition-colors dark:text-white"
             :to="`${
               index < $route.path.split('/').slice(1).length - 1
                 ? `/${item}`
@@ -65,7 +69,7 @@ watch(headerMain, () => {
           >
             {{ item }}
           </NuxtLink>
-          <span class="text-gray-400 dark:text-gray-600">{{
+          <span class="font-semibold text-gray-400 dark:text-neutral-600">{{
             index < $route.fullPath.split('/').slice(1).length - 1 ? '/' : ''
           }}</span>
         </li>
