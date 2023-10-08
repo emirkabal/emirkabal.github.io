@@ -71,7 +71,7 @@ onBeforeRouteLeave(() => {
       </TresGroup>
       <Suspense>
         <Environment
-          background
+          :background="false"
           :files="['px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg']"
           :path="'/3d/map/'"
         />

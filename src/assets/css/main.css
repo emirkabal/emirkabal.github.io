@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  @apply bg-white text-black antialiased dark:bg-black dark:text-white;
+  @apply bg-white text-black antialiased dark:bg-neutral-900 dark:text-white;
 }
 
 /* Scrollbar */
@@ -19,16 +19,16 @@ html::-webkit-scrollbar-track {
   @apply bg-none;
 }
 html::-webkit-scrollbar-thumb {
-  @apply rounded-full bg-neutral-300;
+  @apply rounded-full bg-gray-300;
 }
 html::-webkit-scrollbar-thumb:hover {
-  @apply bg-neutral-400;
+  @apply bg-gray-400;
 }
 html.dark::-webkit-scrollbar-thumb {
-  @apply rounded-full bg-slate-800;
+  @apply rounded-full bg-neutral-800;
 }
 html.dark::-webkit-scrollbar-thumb:hover {
-  @apply bg-slate-700;
+  @apply bg-neutral-700;
 }
 
 .prose :where(iframe):not(:where([class~='not-prose'] *)) {

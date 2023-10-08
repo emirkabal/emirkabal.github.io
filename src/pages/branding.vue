@@ -49,7 +49,7 @@ useSeoMeta({
         <div class="flex gap-2">
           <div class="w-full">
             <div
-              class="rounded-xl border p-6 dark:border-transparent md:p-12"
+              class="rounded-xl border p-6 dark:border-transparent sm:p-12"
               :style="{
                 backgroundImage: `url(/images/branding/bg-transparent-w.png)`,
                 backgroundPosition: '0%',
@@ -58,7 +58,7 @@ useSeoMeta({
             >
               <img
                 :src="LogoBlack"
-                class="mx-auto h-auto w-full max-w-[200px]"
+                class="mx-auto h-auto w-full max-w-[140px]"
               />
             </div>
             <div class="mt-2 text-center">
@@ -82,7 +82,7 @@ useSeoMeta({
           </div>
           <div class="w-full">
             <div
-              class="rounded-xl border p-6 dark:border-transparent md:p-12"
+              class="rounded-xl border p-6 dark:border-transparent sm:p-12"
               :style="{
                 backgroundImage: `url(/images/branding/bg-transparent.png)`,
                 backgroundPosition: '0%',
@@ -91,7 +91,7 @@ useSeoMeta({
             >
               <img
                 :src="LogoWhite"
-                class="mx-auto h-auto w-full max-w-[200px]"
+                class="mx-auto h-auto w-full max-w-[140px]"
               />
             </div>
             <div class="mt-2 text-center">
