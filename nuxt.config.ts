@@ -19,7 +19,8 @@ export default defineNuxtConfig({
       '@nuxtjs/tailwindcss',
       {
         viewer: false,
-        exposeConfig: true
+        exposeConfig: true,
+        injectPosition: 'last'
       }
     ],
     [
@@ -35,7 +36,8 @@ export default defineNuxtConfig({
     '@fontsource/inter/400.css',
     '@fontsource/inter/500.css',
     '@fontsource/inter/600.css',
-    '@fontsource/inter/700.css'
+    '@fontsource/inter/700.css',
+    '@fontsource/inter/800.css'
   ],
   nitro: {
     prerender: {
