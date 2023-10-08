@@ -54,7 +54,7 @@ onBeforeRouteLeave(() => {
         v-show="!hasFinishLoading"
         class="bg-grey-600 t-0 l-0 absolute z-20 flex h-full w-full items-center justify-center font-mono text-black"
       >
-        <div class="w-200px">Loading... {{ progress }} %</div>
+        <div class="w-200px">{{ progress }} %</div>
       </div>
     </Transition>
     <TresCanvas alpha preset="realistic">
@@ -71,7 +71,6 @@ onBeforeRouteLeave(() => {
       </TresGroup>
       <Suspense>
         <Environment
-          :background="false"
           :files="['px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg']"
           :path="'/3d/map/'"
         />
