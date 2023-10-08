@@ -5,9 +5,11 @@ import {
   useProgress,
   Environment
 } from '@tresjs/cientos'
+
 const { hasFinishLoading, progress } = await useProgress()
-const { onLoop } = useRenderLoop()
-const threed = ref(null)
+const { onLoop, isActive, resume } = useRenderLoop()
+
+const logo3d = shallowRef(null)
 
 withDefaults(
   defineProps<{
@@ -18,26 +20,25 @@ withDefaults(
   }
 )
 
-watchEffect(async () => {
-  await nextTick()
-  onLoop(({ delta }) => {
-    if (threed.value) {
-      // @ts-ignore
-      threed.value.rotation.y += delta * 0.2
-    }
-  })
+onMounted(() => {
+  if (!isActive.value) resume()
+})
+
+onLoop(({ delta }) => {
+  // @ts-ignore
+  if (logo3d.value) logo3d.value.rotation.y += delta * 0.25
 })
 
 onBeforeRouteLeave(() => {
-  threed.value = null
+  logo3d.value = null
 })
 </script>
 <template>
   <figure
     class="!pointer-events-none relative mx-auto md:pointer-events-auto"
     :class="{
-      'opacity-0': !threed,
-      'opacity-100': threed,
+      'opacity-0': !hasFinishLoading,
+      'opacity-100': hasFinishLoading,
       'h-64 w-64': size === 'static',
       'h-64 w-64 md:h-full md:w-full': size === 'auto'
     }"
@@ -54,7 +55,7 @@ onBeforeRouteLeave(() => {
         v-show="!hasFinishLoading"
         class="bg-grey-600 t-0 l-0 absolute z-20 flex h-full w-full items-center justify-center font-mono text-black"
       >
-        <div class="w-200px">{{ progress }} %</div>
+        {{ progress }} %
       </div>
     </Transition>
     <TresCanvas alpha preset="realistic">
@@ -64,11 +65,11 @@ onBeforeRouteLeave(() => {
         :enable-zoom="false"
         :enable-damping="false"
       />
-      <TresGroup ref="threed">
+      <TresMesh ref="logo3d">
         <Suspense>
           <GLTFModel path="/3d/model/scene.gltf" draco />
         </Suspense>
-      </TresGroup>
+      </TresMesh>
       <Suspense>
         <Environment
           :files="['px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg']"
