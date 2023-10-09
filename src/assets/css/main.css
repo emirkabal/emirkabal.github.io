@@ -54,3 +54,14 @@ html.dark::-webkit-scrollbar-thumb:hover {
 .dark::view-transition-new(root) {
   z-index: 1;
 }
+
+.v-popper__inner {
+  background: #000 !important;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.1),
+    0 4px 11px rgba(0, 0, 0, 0.2) !important;
+}
+
+.v-popper__arrow-outer {
+  border-color: #000 !important;
+}
