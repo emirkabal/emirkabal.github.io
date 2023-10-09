@@ -22,7 +22,12 @@ watch(headerMain, () => {
       class="flex flex-row-reverse items-center justify-end sm:flex-row sm:justify-between"
     >
       <div class="tracking-wide">
-        <h1 class="text-xl font-black sm:text-4xl">Emir Kabal</h1>
+        <div class="flex items-center gap-x-2.5">
+          <h1 class="flex-shrink-0 text-xl font-black sm:text-4xl">
+            Emir Kabal
+          </h1>
+          <Presence />
+        </div>
         <p
           class="text-sm leading-4 text-gray-700 dark:text-gray-300 sm:text-base"
         >
