@@ -35,7 +35,7 @@ onUnmounted(() => {
         :href="`https://open.spotify.com/track/${presence.spotify.track_id}`"
         target="_blank"
         rel="noopener noreferrer nofollow"
-        class="hidden max-w-xs cursor-pointer rounded bg-[#1DB954] px-2 py-1 text-xs text-white sm:inline-block"
+        class="hidden max-w-xs cursor-pointer rounded-lg bg-[#1DB954] px-2 py-1 text-xs text-white transition hover:bg-green-600 hover:shadow sm:inline-block"
         v-tooltip="{
           content: 'Listening now',
           distance: 10,

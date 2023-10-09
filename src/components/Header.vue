@@ -19,7 +19,7 @@ watch(headerMain, () => {
     <nav
       v-if="$route.name === 'index'"
       ref="headerMain"
-      class="flex flex-row-reverse items-center justify-end sm:flex-row sm:justify-between"
+      class="flex items-center justify-between"
     >
       <div class="tracking-wide">
         <div class="flex items-center gap-x-2.5">
@@ -38,7 +38,7 @@ watch(headerMain, () => {
         src="~/assets/images/me.jpg"
         alt="Emir Kabal"
         loading="lazy"
-        class="mr-4 h-16 w-16 rounded-full sm:mr-0"
+        class="ml-4 h-16 w-16 cursor-pointer rounded-lg sm:mr-0"
       />
     </nav>
     <nav
