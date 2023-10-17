@@ -2,6 +2,7 @@
 title: 'CSS Transform ile Ayna Efekti Oluşturma'
 short_description: 'CSS transform özelliğini kullanarak web tasarımında ayna efekti oluşturmayı öğrenin.'
 tags: [css, tasarım, web, transform, scale, yansıtma, ayna efekti]
+image: 'css-transform-ile-ayna-efekti-olusturma/zvglbves6wgc2multbbi.jpg'
 createdAt: '2023-10-08T12:48:00.000Z'
 ---
 

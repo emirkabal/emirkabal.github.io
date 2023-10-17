@@ -1,14 +1,3 @@
-<script setup>
-const height = ref('144px')
-const headerMain = ref(null)
-
-watch(headerMain, () => {
-  if (headerMain.value && headerMain.value.clientHeight) {
-    height.value = headerMain.value.clientHeight + 'px'
-  }
-})
-</script>
-
 <template>
   <Transition
     enter-active-class="duration-700 ease-out"
@@ -18,8 +7,7 @@ watch(headerMain, () => {
   >
     <nav
       v-if="$route.name === 'index'"
-      ref="headerMain"
-      class="flex flex-row-reverse items-center justify-end sm:flex-row sm:justify-between"
+      class="flex items-center justify-between"
     >
       <div class="tracking-wide">
         <div class="flex items-center gap-x-2.5">
@@ -38,12 +26,12 @@ watch(headerMain, () => {
         src="~/assets/images/me.jpg"
         alt="Emir Kabal"
         loading="lazy"
-        class="mr-4 h-16 w-16 rounded-full sm:mr-0"
+        class="ml-4 h-16 w-16 cursor-pointer rounded-lg sm:mr-0"
       />
     </nav>
     <nav
       v-else
-      class="z-10 rounded-lg border border-gray-300 bg-gray-50 px-4 py-2 backdrop-blur-3xl dark:border-neutral-800 dark:bg-neutral-800/60"
+      class="z-10 rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 backdrop-blur-3xl dark:border-neutral-800 dark:bg-neutral-800/60"
     >
       <ul class="flex items-center gap-2 font-semibold">
         <li class="flex flex-shrink-0 items-center gap-2">

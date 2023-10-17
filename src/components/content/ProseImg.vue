@@ -18,6 +18,10 @@ const props = defineProps({
   height: {
     type: [String, Number],
     default: undefined
+  },
+  maxHeight: {
+    type: [String, Number],
+    default: undefined
   }
 })
 
@@ -38,16 +42,15 @@ const error = ref(false)
 </script>
 
 <template>
-  <div
-    :class="{
-      'my-4': !loaded || !error
-    }"
-  >
+  <div class="my-4">
     <div
       v-if="!loaded || error"
-      class="relative aspect-video rounded-xl bg-gray-200 dark:bg-neutral-800"
+      class="relative aspect-video w-full rounded-xl bg-gray-200 dark:bg-neutral-800"
       :class="{
         'animate-pulse': !loaded && !error
+      }"
+      :style="{
+        maxHeight: props.maxHeight
       }"
     >
       <div
@@ -57,19 +60,22 @@ const error = ref(false)
         <IconsNoImage class="h-12 w-12 text-gray-700 dark:text-gray-300" />
       </div>
     </div>
-    <img
+    <NuxtImg
       :src="refinedSrc"
       loading="lazy"
       @load="loaded = true"
       @error=";[(loaded = false), (error = true)]"
       :alt="alt"
-      :width="width"
-      :height="height"
+      format="webp"
+      sizes="100vw sm:50vw md:670px"
       class="h-full w-full object-contain object-center"
       :class="{
-        'pointer-events-none absolute inset-0 left-0 top-0 -z-50 !h-0 !w-0 opacity-0':
+        'pointer-events-none absolute inset-0 left-0 top-0 !h-0 !w-0 opacity-0':
           !loaded,
         'opacity-100': loaded
+      }"
+      :style="{
+        maxHeight: props.maxHeight
       }"
     />
   </div>

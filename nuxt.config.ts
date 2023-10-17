@@ -4,6 +4,17 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     [
+      '@nuxt/image',
+      {
+        domains: ['res.cloudinary.com', 'i.imgur.com'],
+        formats: ['webp', 'png', 'jpg'],
+        provider: 'cloudinary',
+        cloudinary: {
+          baseURL: 'https://res.cloudinary.com/dxil99qx3/image/upload/'
+        }
+      }
+    ],
+    [
       '@nuxt/content',
       {
         markdown: {
@@ -42,6 +53,11 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       routes: ['/sitemap.xml']
+    }
+  },
+  runtimeConfig: {
+    public: {
+      GOOGLE_ANALYTICS_ID: 'G-LCWP73RVML'
     }
   }
 })

@@ -4,6 +4,7 @@ export interface Post {
   createdAt: string
   short_description: string
   tags: string[]
+  image?: string
 }
 
 export interface Repository {
