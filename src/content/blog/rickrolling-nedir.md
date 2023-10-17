@@ -2,6 +2,7 @@
 title: 'Rickrolling Nedir?'
 short_description: 'İnternet aleminde dolaşan Rick Roll adı verilen internet akımını sizlere kendimce anlattım.'
 tags: [bilgi, eğlence]
+image: 'rickrolling-nedir/fiyjwf2hvaly4w9a10bi.jpg'
 createdAt: '2021-09-07T00:00:00.000Z'
 ---
 

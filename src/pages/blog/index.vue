@@ -49,6 +49,7 @@ const groups = computed(() => {
 const title = 'Blog'
 const description =
   'Emir Kabal tarafından yazılan son blog gönderilerini okuyun.'
+
 useSeoMeta({
   titleTemplate: '%s - Emir Kabal',
   title,

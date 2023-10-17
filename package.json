@@ -32,6 +32,10 @@
     "prettier-plugin-tailwindcss": "^0.5.5",
     "sitemap": "^7.1.1",
     "tailwindcss": "^3.3.3",
-    "three": "^0.157.0"
+    "three": "^0.157.0",
+    "vue-gtag-next": "^1.14.0"
+  },
+  "dependencies": {
+    "@nuxt/image": "1.0.0-rc.3"
   }
 }

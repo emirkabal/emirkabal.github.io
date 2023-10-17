@@ -1,4 +1,6 @@
 <script setup>
+const mode = useColorMode()
+const isDark = computed(() => mode.value === 'dark')
 const description =
   "Hello, I'm Emir Kabal and I'm a full-stack developer and making some Node.js applications and websites."
 useSeoMeta({
@@ -27,7 +29,7 @@ useHead({
 })
 </script>
 <template>
-  <NuxtLoadingIndicator />
+  <NuxtLoadingIndicator :color="isDark ? '#fff' : '#000'" />
   <NuxtLayout>
     <NuxtPage
       :transition="{
