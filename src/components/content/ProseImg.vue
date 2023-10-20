@@ -67,7 +67,7 @@ const error = ref(false)
       @error=";[(loaded = false), (error = true)]"
       :alt="alt"
       format="webp"
-      sizes="100vw sm:50vw md:670px"
+      sizes="100vw sm:50vw md:768px"
       class="h-full w-full object-contain object-center"
       :class="{
         'pointer-events-none absolute inset-0 left-0 top-0 !h-0 !w-0 opacity-0':

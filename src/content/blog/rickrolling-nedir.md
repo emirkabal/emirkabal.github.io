@@ -6,7 +6,9 @@ image: 'rickrolling-nedir/fiyjwf2hvaly4w9a10bi.jpg'
 createdAt: '2021-09-07T00:00:00.000Z'
 ---
 
-Rickrolling bir dans türü ve internet akımıdır. 1987 yılında Rick Astley'in [Never Gonna Give You Up](#şarkı-never-gonna-give-you-up) şarkısının klibinde yaptığı danslar sebebiyle çok popüler olmuştur. Günümüzde bu dans protestolarda, 1 Nisan günlerinde yapılmaktadır. Zaman, zaman bazı insanlar arkadaşlarına şaka yapmak için bit.ly tarzında link kısaltma sitelerini kullanarak [Never Gonna Give You Up](#şarkı-never-gonna-give-you-up) Şarkısını kısaltarak, kısaltılmış bağlantıyı arkadaşlarına yollarlar ve şakaya maruz kalan arkadaşımız bu müthiş, efsanevi şarkı ile baş başa kalır.
+Rickrolling bir dans türü ve internet akımıdır. 1987 yılında Rick Astley'in [Never Gonna Give You Up](#şarkı-never-gonna-give-you-up) şarkısının klibinde yaptığı danslar sebebiyle çok popüler olmuştur. Günümüzde bu dans protestolarda ve 1 Nisan günlerinde yapılmaktadır. Zaman, zaman bazı arkadaş grupları birbirlerine şaka yapmak için bit.ly veya herhangi bir başka link kısaltma servislerini kullanarak [Never Gonna Give You Up](#şarkı-never-gonna-give-you-up) Şarkısını kısaltarak, kısaltılmış bağlantıyı arkadaşlarına yollarlar ve şakaya maruz kalan arkadaşlarımız bu müthiş efsanevi şarkı ile baş başa kalır.
+
+:checkout{}[Eğer siz de bu internet akımını devam ettirmek ve arkadaşlarınıza şaka yapmak istiyorsanız **[dontclickme.emirkabal.com](https://dontclickme.emirkabal.com/)** adresini paylaşabilirsiniz.]
 
 ## Peki Kim Bu Bahsi Geçen Şarkıcı?
 

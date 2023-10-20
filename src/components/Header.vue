@@ -16,11 +16,11 @@
           </h1>
           <Presence />
         </div>
-        <p
+        <h6
           class="text-sm leading-4 text-gray-700 dark:text-gray-300 sm:text-base"
         >
           A full-stack software developer from Turkey.
-        </p>
+        </h6>
       </div>
       <img
         src="~/assets/images/me.jpg"
