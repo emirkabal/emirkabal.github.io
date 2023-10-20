@@ -72,7 +72,7 @@ useSeoMeta({
       :key="group.date.toString()"
     >
       <h6 class="text-xl font-bold sm:text-2xl">
-        {{ $moment(group.date).locale('tr').format('MMMM YYYY') }}
+        {{ $moment(group.date).locale('tr').format('YYYY MMMM') }}
       </h6>
       <ul class="space-y-2">
         <li v-for="post in group.posts" :key="post._path">

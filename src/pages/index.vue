@@ -3,11 +3,11 @@ import { Repository } from '~/@types'
 
 const { data: posts } = await useAsyncData('homepage-posts', () =>
   queryContent('blog')
-    .limit(4)
+    .limit(5)
     .sort({
       createdAt: -1
     })
-    .only(['title', 'createdAt', '_path'])
+    .only(['title', 'createdAt', '_path', 'short_description'])
     .find()
 )
 
@@ -75,24 +75,45 @@ const footer = [
     </section>
 
     <section class="my-8" v-if="posts && posts.length > 0">
-      <div class="mb-2 flex items-center gap-2">
-        <h3 class="text-xl font-bold">Blog</h3>
-        <NuxtLink
-          to="/blog"
-          class="mt-1 text-sm text-gray-600 transition-colors hover:text-black dark:text-gray-300 dark:hover:text-white"
-          >See all posts (Turkish only)</NuxtLink
-        >
-      </div>
+      <h2 class="mb-2 text-xl font-bold">Recent Posts</h2>
       <ul class="grid grid-cols-1 gap-2 sm:grid-cols-2">
         <li v-for="post in posts" :key="post.createdAt">
           <NuxtLink
-            class="inline-block w-full cursor-pointer rounded border border-gray-300 bg-gray-50/40 px-4 py-2 text-gray-600 transition-colors hover:border-gray-400 hover:text-black dark:border-neutral-800 dark:bg-neutral-800/40 dark:text-gray-300 dark:hover:border-neutral-700 dark:hover:text-white"
+            class="group inline-block w-full cursor-pointer rounded border border-gray-300 bg-gray-50/40 px-4 py-2 text-gray-600 transition-colors hover:border-gray-400 hover:text-black dark:border-neutral-800 dark:bg-neutral-800/40 dark:text-gray-300 dark:hover:border-neutral-700 dark:hover:text-white"
             :to="post._path"
           >
-            <h3 class="line-clamp-1 text-sm">{{ post.title }}</h3>
-            <time class="line-clamp-1 text-xs font-semibold">
-              {{ $moment(post.createdAt).locale('tr').format('D MMM YYYY') }}
-            </time>
+            <div class="flex items-center justify-between">
+              <h2 class="line-clamp-1 text-sm font-semibold">
+                {{ post.title }}
+              </h2>
+              <time
+                class="ml-2 flex-shrink-0 text-xs font-semibold opacity-80 transition-opacity group-hover:opacity-100"
+              >
+                {{ $betterFormat(post.createdAt) }}
+              </time>
+            </div>
+            <p class="line-clamp-2 text-xs opacity-80">
+              {{ post.short_description }}
+            </p>
+          </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink
+            class="group inline-block w-full cursor-pointer rounded border border-gray-300 bg-gray-50/40 px-4 py-2 text-gray-600 transition-colors hover:border-gray-400 hover:text-black dark:border-neutral-800 dark:bg-neutral-800/40 dark:text-gray-300 dark:hover:border-neutral-700 dark:hover:text-white"
+            to="/blog"
+          >
+            <div class="flex items-center justify-between">
+              <h3 class="line-clamp-1 text-sm font-semibold">
+                Want to read more?
+              </h3>
+              <IconsArrow
+                class="inline-block h-5 w-5 opacity-80 transition-opacity group-hover:opacity-100"
+              />
+            </div>
+            <p class="line-clamp-2 text-xs opacity-80">
+              Visit my blog for a variety of engaging posts. Currently only
+              available in Turkish.
+            </p>
           </NuxtLink>
         </li>
       </ul>
@@ -123,7 +144,7 @@ const footer = [
                 <IconsStar class="-mt-0.5 inline-block h-4 w-4 text-klue" />
               </span>
             </div>
-            <p class="line-clamp-3 text-xs opacity-80">
+            <p class="line-clamp-2 text-xs opacity-80">
               {{ repo.description }}
             </p>
           </a>
@@ -131,8 +152,8 @@ const footer = [
         <li
           v-else-if="pending"
           v-for="i in 6"
-          :key="'repol' + i"
-          class="h-[70px] w-full animate-pulse rounded bg-gray-200 dark:bg-neutral-800 sm:h-[86px]"
+          :key="'repop' + i"
+          class="h-[70px] w-full animate-pulse rounded bg-gray-200 dark:bg-neutral-800"
         ></li>
         <li v-else class="text-red-700">
           Fetch error. Please try again later.

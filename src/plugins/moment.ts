@@ -4,7 +4,15 @@ import 'moment/dist/locale/tr'
 export default defineNuxtPlugin(() => {
   return {
     provide: {
-      moment
+      moment,
+      betterFormat: (date: string) =>
+        moment(date)
+          .locale('tr')
+          .format(
+            new Date(date).getFullYear() === new Date().getFullYear()
+              ? 'D MMM'
+              : 'D MMM YY'
+          )
     }
   }
 })
