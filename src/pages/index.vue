@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Repository } from '~/@types'
+import type { Repository } from '~/@types'
 
 const { data: posts } = await useAsyncData('homepage-posts', () =>
   queryContent('blog')

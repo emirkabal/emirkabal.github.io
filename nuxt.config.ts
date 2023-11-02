@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
   srcDir: 'src',
   devtools: { enabled: true },
+  experimental: {
+    asyncContext: true
+  },
   modules: [
     [
       '@nuxt/image',

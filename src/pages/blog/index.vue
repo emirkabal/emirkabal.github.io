@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { Post } from '~/@types'
+import type { Post } from '~/@types'
+
 const { data } = await useAsyncData<Post[]>(
   'all-posts',
   () =>

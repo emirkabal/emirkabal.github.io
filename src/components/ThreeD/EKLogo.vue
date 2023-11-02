@@ -1,9 +1,10 @@
 <script setup lang="ts">
+import { useIntersectionObserver } from '@vueuse/core'
 import {
-  OrbitControls,
   GLTFModel,
   useProgress,
-  Environment
+  Environment,
+  OrbitControls
 } from '@tresjs/cientos'
 
 const { hasFinishLoading, progress } = await useProgress()
@@ -32,9 +33,17 @@ onLoop(({ delta }) => {
 onBeforeRouteLeave(() => {
   logo3d.value = null
 })
+
+const target = ref()
+const isVisible = ref(false)
+
+useIntersectionObserver(target, ([{ isIntersecting }]) => {
+  isVisible.value = isIntersecting
+})
 </script>
 <template>
   <figure
+    ref="target"
     class="!pointer-events-none relative mx-auto md:pointer-events-auto"
     :class="{
       'opacity-0': !hasFinishLoading,
@@ -58,7 +67,7 @@ onBeforeRouteLeave(() => {
         {{ progress }} %
       </div>
     </Transition>
-    <TresCanvas alpha preset="realistic">
+    <TresCanvas alpha v-if="isVisible">
       <TresPerspectiveCamera :position="[0, 0, 84]" />
       <OrbitControls
         :enable-pan="false"
