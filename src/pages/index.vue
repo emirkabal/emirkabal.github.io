@@ -12,7 +12,7 @@ const { data: posts } = await useAsyncData('homepage-posts', () =>
 )
 
 const { data: repos, pending } = await useFetch<Repository[]>(
-  'https://gh-pinned-repos--master.deno.dev/?username=emirkabal',
+  'https://gh-pinned-repos-tsj7ta5xfhep.deno.dev/?username=emirkabal',
   {
     server: false
   }
