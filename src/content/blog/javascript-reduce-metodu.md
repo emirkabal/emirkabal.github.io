@@ -135,7 +135,7 @@ JavaScript'te `reduce()` fonksiyonu, fonksiyonel programlamanın temel taşları
 
 2. **Başka hangi dizi metodlarıyla `reduce()` fonksiyonunu birleştirebilirim?**
 
-   - [`map()`](/blog/javascript-map-fonksiyonu), `filter()`, ve `forEach()` gibi metodlarla rahatlıkla birleştirebilirsiniz.
+   - [`map()`](/blog/javascript-map-metodu), `filter()`, ve `forEach()` gibi metodlarla rahatlıkla birleştirebilirsiniz.
 
 3. **JavaScript topluluğu `reduce()` fonksiyonunu nasıl değerlendiriyor?**
 
