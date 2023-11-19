@@ -1,16 +1,16 @@
 ---
-title: 'JavaScript map() Fonksiyonu'
-short_description: 'JavaScript map() fonksiyonunu kullanarak dizileri dönüştürmek ve verileri işlemek için güçlü bir araç keşfedin.'
+title: 'JavaScript map() Metodu'
+short_description: 'JavaScript map() metodunu kullanarak dizileri dönüştürmek ve verileri işlemek için güçlü bir araç keşfedin.'
 tags: [javascript, array, map, dizi, döngü, web]
 image: 'javascript-map-fonksiyonu/ectrqxgnghtwhtscego0.jpg'
 createdAt: '2023-09-23T16:00:00.000Z'
 ---
 
-Bu yazıda, JavaScript'in `map()` fonksiyonunu keşfedeceğiz ve nasıl kullanılacağınıza dair örnekler sunacağım. `map()` fonksiyonu, dizileri dönüştürmek ve her bir öğeyi işlemek için mükemmel bir araçtır.
+Bu yazıda, JavaScript'in `map()` metodunu keşfedeceğiz ve nasıl kullanılacağınıza dair örnekler sunacağım. `map()` metodu, dizileri dönüştürmek ve her bir öğeyi işlemek için mükemmel bir araçtır.
 
-### `map()` Fonksiyonunun Temel Kullanımı
+### `map()` Metodunun Temel Kullanımı
 
-`map()` fonksiyonu, bir dizi veya iterable (yineleyici) nesnesinin her öğesini döngüye alır ve belirlediğiniz bir işlevi her öğe üzerinde uygular. Bu işlem sonucunda yeni bir dizi oluşturulur. İşte temel kullanımı:
+`map()` metodu, bir dizi veya iterable (yineleyici) nesnesinin her öğesini döngüye alır ve belirlediğiniz bir işlevi her öğe üzerinde uygular. Bu işlem sonucunda yeni bir dizi oluşturulur. İşte temel kullanımı:
 
 ```javascript
 const sayilar = [1, 2, 3, 4, 5]
@@ -23,7 +23,7 @@ const ikiKat = sayilar.map(function (sayi) {
 console.log(ikiKat) // [2, 4, 6, 8, 10]
 ```
 
-Yukarıdaki örnekte, `map()` fonksiyonu `sayilar` dizisindeki her öğeyi iki katına çıkardı ve sonucu `ikiKat` dizisine ekledi.
+Yukarıdaki örnekte, `map()` metodu `sayilar` dizisindeki her öğeyi iki katına çıkardı ve sonucu `ikiKat` dizisine ekledi.
 
 ### Arrow Fonksiyonları ile Kısa Sözdizimi
 
@@ -80,6 +80,6 @@ Eğer daha fazla örneğe ihtiyacınız varsa [MDN - Array.map()](https://develo
 
 ### Sonuç
 
-JavaScript'in `map()` fonksiyonu, dizileri işlemek ve dönüştürmek için güçlü bir araçtır. Bu yazıda, temel kullanımı ve pratik örnekleri gördük. `map()` fonksiyonunu kullanarak verileri daha düzenli ve işlenmesi kolay bir şekilde yönetebilirsiniz. Bu nedenle, JavaScript projelerinizde bu işlevi kullanmayı düşünün ve veri işleme süreçlerinizi basitleştirin.
+JavaScript'in `map()` metodu, dizileri işlemek ve dönüştürmek için güçlü bir araçtır. Bu yazıda, temel kullanımı ve pratik örnekleri gördük. `map()` metodunu kullanarak verileri daha düzenli ve işlenmesi kolay bir şekilde yönetebilirsiniz. Bu nedenle, JavaScript projelerinizde bu işlevi kullanmayı düşünün ve veri işleme süreçlerinizi basitleştirin.
 
-Umarım bu yazı, JavaScript `map()` fonksiyonunu daha iyi anlamanıza ve projelerinizde kullanmanıza yardımcı olur. İyi kodlamalar!
+Umarım bu yazı, JavaScript `map()` metodunu daha iyi anlamanıza ve projelerinizde kullanmanıza yardımcı olur. İyi kodlamalar!
