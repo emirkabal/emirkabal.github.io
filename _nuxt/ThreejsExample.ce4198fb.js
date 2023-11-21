@@ -1,1 +1,0 @@
-import{_ as o}from"./_plugin-vue_export-helper.c27b6911.js";import{j as r,o as t,q as c}from"./entry.2d724455.js";const s={};function n(a,_){const e=r("ThreeDEKLogo");return t(),c(e,{size:"static"})}const f=o(s,[["render",n]]);export{f as default};
