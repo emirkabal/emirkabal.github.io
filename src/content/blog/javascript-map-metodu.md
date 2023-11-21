@@ -1,7 +1,7 @@
 ---
 title: 'JavaScript map() Metodu'
 short_description: 'JavaScript map() metodunu kullanarak dizileri dönüştürmek ve verileri işlemek için güçlü bir araç keşfedin.'
-tags: [javascript, array, map, dizi, döngü, web]
+tags: [javascript, array, map, dizi, web, programlama]
 image: 'javascript-map-fonksiyonu/ectrqxgnghtwhtscego0.jpg'
 createdAt: '2023-09-23T16:00:00.000Z'
 ---

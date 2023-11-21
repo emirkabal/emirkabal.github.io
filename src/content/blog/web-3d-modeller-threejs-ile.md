@@ -52,7 +52,7 @@ Tres.js, web tabanlı 3D grafikler oluşturmak için kullanılan açık kaynakl�
 
 Aşağıda, Tres.js kullanılarak oluşturulan etkileyici bir 3D modelin örneği:
 
-:ThreejsExample
+:threejs-example
 
 ### Sonuç
 

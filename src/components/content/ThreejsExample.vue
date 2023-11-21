@@ -1,3 +1,3 @@
 <template>
-  <ThreeDEKLogo :size="'static'" />
+  <three-d-ek-logo :size="'static'" />
 </template>

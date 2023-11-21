@@ -22,8 +22,6 @@ Aşağıda, bir `div` öğesini yatay eksende nasıl yansıtacağınızı göste
 }
 ```
 
-HTML:
-
 ```html
 <div class="yansitilmis-div">Yatay Yansıtılmış Div</div>
 ```

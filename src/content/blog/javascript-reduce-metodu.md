@@ -1,7 +1,7 @@
 ---
 title: 'JavaScript reduce() Metodu'
 short_description: 'JavaScript reduce() metodunun kullanımı, avantajları ve gerçek dünya örnekleri.'
-tags: [javascript, programlama, fonksiyonel-programlama, reduce-metodu]
+tags: [javascript, programlama, array, dizi, reduce, web]
 image: 'javascript-reduce-fonksiyonu-fonksiyonel-programlamanin-gucunu-kesfedin/ji1wi62gjbggus8vf9k9.jpg'
 createdAt: '2023-11-17T09:57:00.000Z'
 ---

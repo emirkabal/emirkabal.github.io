@@ -70,12 +70,11 @@ const error = ref(false)
       sizes="100vw sm:50vw md:768px"
       class="h-full w-full object-contain object-center"
       :class="{
-        'pointer-events-none absolute inset-0 left-0 top-0 !h-0 !w-0 opacity-0':
-          !loaded,
-        'opacity-100': loaded
+        'pointer-events-none invisible absolute inset-0 left-0 top-0 !h-0 !w-0':
+          !loaded
       }"
       :style="{
-        maxHeight: props.maxHeight
+        maxHeight: maxHeight
       }"
     />
   </div>
