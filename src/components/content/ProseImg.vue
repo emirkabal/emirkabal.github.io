@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { withTrailingSlash, withLeadingSlash, joinURL } from 'ufo'
-import { useRuntimeConfig, computed } from '#imports'
-
 const props = defineProps({
   src: {
     type: String,
@@ -36,25 +34,28 @@ const refinedSrc = computed(() => {
   }
   return props.src
 })
-
-const loaded = ref(false)
-const error = ref(false)
+const state = useState(refinedSrc.value, () => {
+  return {
+    isLoading: true,
+    error: false
+  }
+})
 </script>
 
 <template>
   <div class="my-4">
     <div
-      v-if="!loaded || error"
+      v-if="state.isLoading || state.error"
       class="relative aspect-video w-full rounded-xl bg-gray-200 dark:bg-neutral-800"
       :class="{
-        'animate-pulse': !loaded && !error
+        'animate-pulse': state.isLoading && !state.error
       }"
       :style="{
         maxHeight: props.maxHeight
       }"
     >
       <div
-        v-if="error"
+        v-if="state.error"
         class="absolute inset-0 flex flex-col items-center justify-center"
       >
         <IconsNoImage class="h-12 w-12 text-gray-700 dark:text-gray-300" />
@@ -63,15 +64,15 @@ const error = ref(false)
     <NuxtImg
       :src="refinedSrc"
       loading="lazy"
-      @load="loaded = true"
-      @error=";[(loaded = false), (error = true)]"
+      @load="state.isLoading = false"
+      @error="state.error = true"
       :alt="alt"
       format="webp"
       sizes="100vw sm:50vw md:768px"
       class="h-full w-full object-contain object-center"
       :class="{
         'pointer-events-none invisible absolute inset-0 left-0 top-0 !h-0 !w-0':
-          !loaded
+          state.isLoading
       }"
       :style="{
         maxHeight: maxHeight

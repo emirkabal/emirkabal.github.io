@@ -60,7 +60,8 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      GOOGLE_ANALYTICS_ID: 'G-LCWP73RVML'
+      GOOGLE_ANALYTICS_ID: 'G-LCWP73RVML',
+      BASE_CDN_URL: 'https://res.cloudinary.com/dxil99qx3/image/upload/'
     }
   }
 })
