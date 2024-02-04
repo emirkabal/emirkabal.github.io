@@ -1,0 +1,1 @@
+import{_ as o}from"./_plugin-vue_export-helper.x3n3nnut.js";import{o as n,c as t,C as r}from"./entry.DLSSKL3V.js";const c={},s={class:"rounded bg-klue/20 px-1 py-0.5 text-klue before:content-none after:content-none"};function a(e,l){return n(),t("code",s,[r(e.$slots,"default")])}const _=o(c,[["render",a]]);export{_ as default};
