@@ -40,6 +40,15 @@ const state = useState(refinedSrc.value, () => {
     error: false
   }
 })
+
+const onLoad = () => {
+  state.value.isLoading = false
+  console.log('loaded')
+}
+const onError = () => {
+  state.value.error = true
+  console.log('error')
+}
 </script>
 
 <template>
@@ -64,8 +73,9 @@ const state = useState(refinedSrc.value, () => {
     <NuxtImg
       :src="refinedSrc"
       loading="lazy"
-      @load="state.isLoading = false"
-      @error="state.error = true"
+      @load="onLoad"
+      @error="onError"
+      :onload="onLoad"
       :alt="alt"
       format="webp"
       sizes="100vw sm:50vw md:768px"

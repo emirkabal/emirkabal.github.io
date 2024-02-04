@@ -46,7 +46,7 @@ useIntersectionObserver(target, ([{ isIntersecting }]) => {
     ref="target"
     class="!pointer-events-none relative mx-auto md:pointer-events-auto"
     :class="{
-      'opacity-0': !hasFinishLoading,
+      // 'opacity-0': !hasFinishLoading,
       'opacity-100': hasFinishLoading,
       'h-64 w-64': size === 'static',
       'h-64 w-64 md:h-full md:w-full': size === 'auto'
@@ -62,7 +62,7 @@ useIntersectionObserver(target, ([{ isIntersecting }]) => {
     >
       <div
         v-show="!hasFinishLoading"
-        class="bg-grey-600 t-0 l-0 absolute z-20 flex h-full w-full items-center justify-center font-mono text-black"
+        class="bg-grey-600 t-0 l-0 absolute z-20 flex h-full w-full items-center justify-center font-mono text-black dark:text-white"
       >
         {{ progress }} %
       </div>
@@ -79,12 +79,10 @@ useIntersectionObserver(target, ([{ isIntersecting }]) => {
           <GLTFModel path="/3d/model/scene.gltf" draco />
         </Suspense>
       </TresMesh>
-      <Suspense>
-        <Environment
-          :files="['px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg']"
-          :path="'/3d/map/'"
-        />
-      </Suspense>
+      <Environment
+        :files="['px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg']"
+        :path="'/3d/map/'"
+      />
       <TresDirectionalLight
         :position="[15, 0, 15]"
         :intensity="2"

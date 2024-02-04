@@ -40,7 +40,7 @@ useSeoMeta({
 <template>
   <div class="mt-8">
     <div class="relative h-96 w-full">
-      <three-d-ek-logo />
+      <smart-logo></smart-logo>
       <div class="relative">
         <h1 class="my-4 text-2xl font-bold sm:text-3xl">Logo</h1>
         <div class="flex gap-2">

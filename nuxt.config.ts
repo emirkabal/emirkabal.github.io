@@ -2,9 +2,6 @@
 export default defineNuxtConfig({
   srcDir: 'src',
   devtools: { enabled: true },
-  experimental: {
-    asyncContext: true
-  },
   modules: [
     [
       '@nuxt/image',
@@ -33,8 +30,7 @@ export default defineNuxtConfig({
       '@nuxtjs/tailwindcss',
       {
         viewer: false,
-        exposeConfig: true,
-        injectPosition: 'last'
+        exposeConfig: true
       }
     ],
     [
@@ -43,7 +39,14 @@ export default defineNuxtConfig({
         classSuffix: ''
       }
     ],
-    '@tresjs/nuxt'
+    '@tresjs/nuxt',
+    [
+      '@nuxtjs/google-adsense',
+      {
+        id: 'ca-pub-4879579032863674',
+        hideUnfilled: true
+      }
+    ]
   ],
   css: [
     '~/assets/css/main.css',
