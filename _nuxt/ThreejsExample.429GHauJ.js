@@ -1,0 +1,1 @@
+import{_ as r}from"./SmartLogo.vue.-7XVwP_J.js";import{_ as t}from"./_plugin-vue_export-helper.x3n3nnut.js";import{o as e,s as c}from"./entry.Z0jj42Hm.js";import"./index.RVy_HND7.js";const s={};function _(a,n){const o=r;return e(),c(o,{size:"static"})}const l=t(s,[["render",_]]);export{l as default};
