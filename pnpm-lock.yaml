@@ -23,9 +23,6 @@ devDependencies:
   '@nuxtjs/color-mode':
     specifier: ^3.3.2
     version: 3.3.2
-  '@nuxtjs/google-adsense':
-    specifier: ^3.0.0
-    version: 3.0.0(vue@3.4.15)
   '@nuxtjs/tailwindcss':
     specifier: ^6.11.3
     version: 6.11.3
@@ -1504,19 +1501,6 @@ packages:
     transitivePeerDependencies:
       - rollup
       - supports-color
-    dev: true
-
-  /@nuxtjs/google-adsense@3.0.0(vue@3.4.15):
-    resolution: {integrity: sha512-fR1rbj6mnfBCWMkVSocPUYX11rGzTwSs1v2sajG6wtXGjXLGRjJSFKSynYHdwO3V4o4xRvtve0W/Db96eiTKmA==}
-    dependencies:
-      '@nuxt/kit': 3.10.0
-      '@vueuse/core': 10.7.2(vue@3.4.15)
-      defu: 6.1.4
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - rollup
-      - supports-color
-      - vue
     dev: true
 
   /@nuxtjs/mdc@0.3.2:

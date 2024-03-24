@@ -67,12 +67,10 @@ useSeoMeta({
           </span>
         </div>
       </header>
-      <Adsbygoogle ad-format="static" class="h-52 md:h-24" />
       <ContentRenderer
         class="prose max-w-none dark:prose-invert prose-headings:mb-2 prose-headings:mt-4 prose-a:no-underline prose-img:rounded-xl prose-img:border dark:prose-img:border-neutral-800 dark:prose-hr:border-neutral-800"
         :value="data"
       />
-      <Adsbygoogle ad-format="static" class="h-52 md:h-24" />
       <div class="flex w-full flex-col gap-2 sm:flex-row">
         <NuxtLink
           class="group flex w-full cursor-pointer items-center justify-between gap-x-2 rounded border border-gray-300 bg-gray-50/40 px-4 py-2 text-right text-gray-600 transition-colors hover:border-gray-400 hover:text-black dark:border-neutral-800 dark:bg-neutral-800/40 dark:text-gray-300 dark:hover:border-neutral-700 dark:hover:text-white"

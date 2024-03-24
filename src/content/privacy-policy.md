@@ -32,11 +32,7 @@ I may use your personal information for the following purposes:
 
 I use Google Analytics to collect and analyze data about the usage of my website. Google Analytics may use cookies and similar technologies. For more information, please review Google's Privacy Policy: [Google Privacy Policy](https://policies.google.com/privacy).
 
-### b. Google AdSense
-
-I may display advertisements on my website through Google AdSense. Google AdSense uses cookies to serve personalized ads based on your browsing history. For more information, please review Google's Privacy Policy: [Google Privacy Policy](https://policies.google.com/privacy).
-
-### c. Cloudflare
+### b. Cloudflare
 
 I use Cloudflare for security and performance optimization purposes. Cloudflare may collect and process certain information about your interactions with my website. For more information, please review Cloudflare's Privacy Policy: [Cloudflare Privacy Policy](https://www.cloudflare.com/privacypolicy/).
 

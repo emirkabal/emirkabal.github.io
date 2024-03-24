@@ -39,14 +39,7 @@ export default defineNuxtConfig({
         classSuffix: ''
       }
     ],
-    '@tresjs/nuxt',
-    [
-      '@nuxtjs/google-adsense',
-      {
-        id: 'ca-pub-4879579032863674',
-        hideUnfilled: true
-      }
-    ]
+    '@tresjs/nuxt'
   ],
   css: [
     '~/assets/css/main.css',
