@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   srcDir: 'src',
-  devtools: { enabled: true },
+  plugins: ['~/plugins/moment.ts'],
   modules: [
     [
       '@nuxt/image',
@@ -49,11 +49,7 @@ export default defineNuxtConfig({
     '@fontsource/inter/700.css',
     '@fontsource/inter/800.css'
   ],
-  nitro: {
-    prerender: {
-      routes: ['/sitemap.xml']
-    }
-  },
+
   runtimeConfig: {
     public: {
       GOOGLE_ANALYTICS_ID: 'G-LCWP73RVML',

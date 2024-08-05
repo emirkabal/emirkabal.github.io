@@ -1,13 +1,11 @@
-import moment from 'moment'
-import 'moment/dist/locale/tr'
-
 export default defineNuxtPlugin(() => {
+  const moment = useMoment()
   return {
     provide: {
       moment,
-      betterFormat: (date: string) =>
+      formatDate: (date: string, locale = 'en') =>
         moment(date)
-          .locale('tr')
+          .locale(locale)
           .format(
             new Date(date).getFullYear() === new Date().getFullYear()
               ? 'D MMM'

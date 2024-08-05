@@ -13,11 +13,11 @@ useSeoMeta({
 })
 </script>
 <template>
-  <div class="mb-28 mt-8">
+  <main class="mb-28 mt-8">
     <ContentDoc
       :head="false"
       class="prose max-w-none dark:prose-invert"
       path="/privacy-policy"
     />
-  </div>
+  </main>
 </template>

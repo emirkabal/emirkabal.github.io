@@ -1,6 +1,7 @@
 <script setup>
-const mode = useColorMode()
-const isDark = computed(() => mode.value === 'dark')
+const { preference } = useColorMode()
+const isDark = computed(() => preference === 'dark')
+
 const description =
   "Hello, I'm Emir Kabal and I'm a full-stack developer and making some Node.js applications and websites."
 useSeoMeta({

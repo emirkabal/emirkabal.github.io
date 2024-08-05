@@ -1,4 +1,4 @@
-export interface Post {
+interface Post {
   title: string
   _path: string
   createdAt: string
@@ -7,7 +7,7 @@ export interface Post {
   image?: string
 }
 
-export interface Repository {
+interface Repository {
   owner: string
   repo: string
   link: string

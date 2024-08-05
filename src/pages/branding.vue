@@ -38,7 +38,7 @@ useSeoMeta({
 })
 </script>
 <template>
-  <div class="mt-8">
+  <main class="mt-8">
     <div class="relative h-96 w-full">
       <smart-logo></smart-logo>
       <div class="relative">
@@ -142,16 +142,14 @@ useSeoMeta({
             <p
               :class="`mt-8 font-semibold leading-4 sm:mt-6 sm:text-lg ${
                 color.bright ? 'text-gray-400' : 'text-gray-300'
-              }
-              `"
+              } `"
             >
               {{ color.hex }}
             </p>
             <p
               :class="`font-semibold sm:text-lg ${
                 color.bright ? 'text-gray-400' : 'text-gray-300'
-              }
-              `"
+              } `"
               @click="copy(`rgb(${color.rgb})`)"
             >
               rgb({{ color.rgb }})
@@ -160,5 +158,5 @@ useSeoMeta({
         </div>
       </div>
     </div>
-  </div>
+  </main>
 </template>

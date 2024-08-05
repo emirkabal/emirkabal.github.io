@@ -59,7 +59,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="mt-8">
+  <main class="mt-8">
     <ClientOnly>
       <h1 class="mb-4 text-2xl font-bold sm:text-3xl">Bank Accounts</h1>
       <ul class="space-y-2">
@@ -96,5 +96,5 @@ useSeoMeta({
         </li>
       </ul>
     </ClientOnly>
-  </div>
+  </main>
 </template>
