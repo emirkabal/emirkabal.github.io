@@ -24,12 +24,12 @@ defineProps<{
       :src="data.images[0]"
     />
     <div class="flex items-center gap-1">
-      <h3 class="text-xl font-semibold tracking-tight">
+      <h3 class="line-clamp-1 text-xl font-semibold tracking-tight">
         {{ data.title }}
       </h3>
       <IconsExternal />
     </div>
-    <p class="text-sm leading-5">
+    <p class="line-clamp-2 text-sm leading-5">
       {{ data.description }}
     </p>
   </NuxtLink>
