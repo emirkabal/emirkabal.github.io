@@ -24,7 +24,7 @@ const { data: posts } = await useAsyncData('homepage-posts', () =>
 
     <section class="my-8">
       <h3 class="mb-2 text-xl font-bold">Projects</h3>
-      <ul class="grid grid-cols-2 gap-4">
+      <ul class="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <li v-for="item in projects" :key="item.url">
           <ProjectCard :data="item" />
         </li>
