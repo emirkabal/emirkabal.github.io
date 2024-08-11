@@ -1,1 +1,0 @@
-import{_ as o}from"./DlAUqK2U.js";import{o as n,c as t,y as r}from"./DAyJQgAX.js";const c={},s={class:"rounded bg-klue/20 px-1 py-0.5 text-klue before:content-none after:content-none"};function a(e,l){return n(),t("code",s,[r(e.$slots,"default")])}const _=o(c,[["render",a]]);export{_ as default};
