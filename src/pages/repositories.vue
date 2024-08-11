@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import type { Repository } from '~/@types'
-
-const { data: repos, status } = await useFetch<Repository[]>(
+const { data: repos, status } = await useLazyFetch<Repository[]>(
   'https://gh-pinned-repos-tsj7ta5xfhep.deno.dev/?username=emirkabal',
   {
     server: false

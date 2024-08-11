@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   srcDir: 'src',
   plugins: ['~/plugins/moment.ts'],
+
   modules: [
     [
       '@nuxt/image',
@@ -41,6 +42,7 @@ export default defineNuxtConfig({
     ],
     '@tresjs/nuxt'
   ],
+
   css: [
     '~/assets/css/main.css',
     '@fontsource/inter/400.css',
@@ -55,5 +57,7 @@ export default defineNuxtConfig({
       GOOGLE_ANALYTICS_ID: 'G-LCWP73RVML',
       BASE_CDN_URL: 'https://res.cloudinary.com/dxil99qx3/image/upload/'
     }
-  }
+  },
+
+  compatibilityDate: '2024-08-11'
 })

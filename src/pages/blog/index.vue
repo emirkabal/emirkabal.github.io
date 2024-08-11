@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Post } from '~/@types'
+const { $moment } = useNuxtApp()
 
 const { data } = await useAsyncData<Post[]>(
   'all-posts',
@@ -79,7 +79,7 @@ useSeoMeta({
         <li v-for="post in group.posts" :key="post._path">
           <NuxtLink
             :to="post._path"
-            class="dark:hover:text-whiteg flex w-full min-w-0 cursor-pointer items-center justify-between rounded border border-gray-300 bg-gray-50/40 px-4 py-2 text-gray-600 transition-colors hover:border-gray-400 hover:text-black dark:border-neutral-800 dark:bg-neutral-800/40 dark:text-gray-300 dark:hover:border-neutral-700"
+            class="card flex h-12 items-center justify-between"
           >
             <span class="line-clamp-1">
               {{ post.title }}

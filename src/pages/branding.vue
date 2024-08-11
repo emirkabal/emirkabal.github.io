@@ -38,11 +38,20 @@ useSeoMeta({
 })
 </script>
 <template>
-  <main class="mt-8">
+  <main class="mt-12">
     <div class="relative h-96 w-full">
       <smart-logo></smart-logo>
+
       <div class="relative">
-        <h1 class="my-4 text-2xl font-bold sm:text-3xl">Logo</h1>
+        <h2 class="my-2 text-2xl font-bold sm:text-3xl">Storyline</h2>
+        <p class="text-gray-600 dark:text-gray-300">
+          At first glance, the logo presents a sleek, modern design. However,
+          when rotated 90 degrees to the left, it reveals the hidden initials
+          “E” and “K” a subtle nod to Emir Kabal. This duality reflects both the
+          simplicity and personal touch embedded in the design.
+        </p>
+
+        <h2 class="mb-4 mt-16 text-2xl font-bold sm:text-3xl">Logo</h2>
         <div class="flex gap-2">
           <div class="w-full">
             <div
@@ -111,7 +120,7 @@ useSeoMeta({
             </div>
           </div>
         </div>
-        <h1 class="my-4 mt-12 text-2xl font-bold sm:text-3xl">Colors</h1>
+        <h2 class="my-4 mt-12 text-2xl font-bold sm:text-3xl">Colors</h2>
 
         <div class="grid gap-4 pb-24 md:grid-cols-3">
           <div

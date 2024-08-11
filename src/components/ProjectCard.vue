@@ -1,9 +1,36 @@
 <script setup lang="ts">
-defineProps<{}>()
+defineProps<{
+  data: {
+    title?: string
+    description?: string
+    images: string[]
+    url?: string
+  }
+}>()
 </script>
 
 <template>
-  <li
-    class="group inline-block w-full cursor-pointer rounded border border-gray-300 bg-gray-50/40 px-4 py-2 text-gray-600 transition-colors hover:border-gray-400 hover:text-black dark:border-neutral-800 dark:bg-neutral-800/40 dark:text-gray-300 dark:hover:border-neutral-700 dark:hover:text-white"
-  ></li>
+  <NuxtLink
+    :to="
+      data.url +
+      '?utm_source=emirkabal.com&utm_medium=web&utm_campaign=portfolio'
+    "
+    external
+    target="_blank"
+    class="card"
+  >
+    <ProseImg
+      class="aspect-video prose-img:rounded-xl prose-img:object-cover"
+      :src="data.images[0]"
+    />
+    <div class="flex items-center gap-1">
+      <h3 class="text-xl font-semibold tracking-tight">
+        {{ data.title }}
+      </h3>
+      <IconsExternal />
+    </div>
+    <p class="text-sm leading-5">
+      {{ data.description }}
+    </p>
+  </NuxtLink>
 </template>

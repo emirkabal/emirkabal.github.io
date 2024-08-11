@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { projects, social, links, footer } from '@/utils/constants'
 const { $formatDate } = useNuxtApp()
 
 const { data: posts } = await useAsyncData('homepage-posts', () =>
@@ -10,56 +11,6 @@ const { data: posts } = await useAsyncData('homepage-posts', () =>
     .only(['title', 'createdAt', '_path', 'short_description'])
     .find()
 )
-
-const social = [
-  {
-    name: 'github',
-    url: 'https://github.com/emirkabal'
-  },
-  {
-    name: 'linkedin',
-    url: 'https://www.linkedin.com/in/emirkabal/'
-  },
-  {
-    name: 'twitter',
-    url: 'https://x.com/emirkabal'
-  },
-  {
-    name: 'instagram',
-    url: 'https://instagram.com/emirkaball'
-  },
-  {
-    name: 'youtube',
-    url: 'https://www.youtube.com/@kabal3345'
-  },
-  {
-    name: 'discord',
-    url: 'https://discord.gg/M5ZSEux'
-  }
-]
-
-const footer = [
-  {
-    name: 'api-docs',
-    url: 'https://api-docs.emirkabal.com'
-  },
-  {
-    name: 'branding',
-    url: '/branding'
-  },
-  {
-    name: 'bank-accounts',
-    url: '/bank-accounts'
-  },
-  {
-    name: 'repositories',
-    url: '/repositories'
-  },
-  {
-    name: 'privacy-policy',
-    url: '/privacy-policy'
-  }
-]
 </script>
 <template>
   <main>
@@ -71,15 +22,17 @@ const footer = [
       />
     </section>
 
-    <!-- <section class="my-8">
-      <h4 class="mb-2 text-xl font-bold">Projects</h4>
-      <ul>
-        <li></li>
+    <section class="my-8">
+      <h3 class="mb-2 text-xl font-bold">Projects</h3>
+      <ul class="grid grid-cols-2 gap-4">
+        <li v-for="item in projects" :key="item.url">
+          <ProjectCard :data="item" />
+        </li>
       </ul>
-    </section> -->
+    </section>
 
     <section class="my-8" v-if="posts && posts.length > 0">
-      <h2 class="mb-2 text-xl font-bold">Recent Posts</h2>
+      <h3 class="mb-2 text-xl font-bold">Recent Posts</h3>
       <ul class="grid grid-cols-1 gap-2 sm:grid-cols-2">
         <PostCard
           v-for="post in posts"
@@ -114,18 +67,38 @@ const footer = [
     </section>
 
     <section class="my-8">
-      <h4 class="text-xl font-bold">Social</h4>
-      <ul class="flex flex-wrap gap-x-2 gap-y-0.5">
+      <h3 class="mb-2 text-xl font-bold">Helpful</h3>
+      <ul class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+        <li v-for="item in links" :key="item.name">
+          <NuxtLink
+            class="card flex items-center gap-1"
+            :to="item.url"
+            :external="item.external"
+            :target="item.external ? '_blank' : '_self'"
+            rel="noopener noreferrer nofollow"
+          >
+            {{ item.name }}
+            <IconsExternal v-if="item.external" />
+          </NuxtLink>
+        </li>
+      </ul>
+    </section>
+
+    <section class="my-8">
+      <h3 class="text-xl font-bold">Social</h3>
+      <ul class="flex flex-wrap gap-x-4 gap-y-0.5">
         <li
           v-for="item in social"
           :key="item.name"
           class="flex-shrink-0 text-gray-600 transition-colors hover:text-black dark:text-gray-300 dark:hover:text-white sm:text-lg"
         >
           <a
+            class="flex items-center gap-1"
             :href="item.url"
             target="_blank"
             rel="noopener noreferrer nofollow"
           >
+            <component :is="item.icon" class="h-4 w-4" />
             {{ item.name }}
           </a>
         </li>
@@ -133,12 +106,11 @@ const footer = [
     </section>
 
     <footer class="my-8">
-      <h5 class="text-xl font-bold">Helpful</h5>
       <ul class="flex flex-wrap gap-x-2 gap-y-0.5">
         <li
           v-for="item in footer"
           :key="item.name"
-          class="flex-shrink-0 text-gray-600 transition-colors hover:text-black dark:text-gray-300 dark:hover:text-white sm:text-lg"
+          class="text*sm flex-shrink-0 text-gray-600 transition-colors hover:text-black dark:text-gray-300 dark:hover:text-white"
         >
           <a
             v-if="item.url.startsWith('http')"
