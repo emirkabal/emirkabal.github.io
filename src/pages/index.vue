@@ -45,10 +45,7 @@ const { data: posts } = await useAsyncData('homepage-posts', () =>
           }"
         />
         <li>
-          <NuxtLink
-            class="group inline-block w-full cursor-pointer rounded border border-gray-300 bg-gray-50/40 px-4 py-2 text-gray-600 transition-colors hover:border-gray-400 hover:text-black dark:border-neutral-800 dark:bg-neutral-800/40 dark:text-gray-300 dark:hover:border-neutral-700 dark:hover:text-white"
-            to="/blog"
-          >
+          <NuxtLink class="card" to="/blog">
             <div class="flex items-center justify-between">
               <h3 class="line-clamp-1 text-sm font-semibold">
                 Want to read more?
@@ -71,14 +68,25 @@ const { data: posts } = await useAsyncData('homepage-posts', () =>
       <ul class="grid grid-cols-1 gap-2 sm:grid-cols-2">
         <li v-for="item in links" :key="item.name">
           <NuxtLink
-            class="card flex items-center gap-1"
+            class="card flex items-center justify-between gap-1"
             :to="item.url"
             :external="item.external"
             :target="item.external ? '_blank' : '_self'"
             rel="noopener noreferrer nofollow"
           >
-            {{ item.name }}
-            <IconsExternal v-if="item.external" />
+            <span class="flex items-center gap-1">
+              {{ item.name }}
+              <IconsExternal v-if="item.external" />
+            </span>
+            <IconsSparkles
+              v-if="item.name === 'Branding'"
+              class="h-5 w-5 select-none text-klue focus:outline-none"
+              v-tooltip="{
+                content: 'There\'s something new here, check it out now',
+                distance: 10,
+                trigger: 'hover'
+              }"
+            />
           </NuxtLink>
         </li>
       </ul>
@@ -112,15 +120,14 @@ const { data: posts } = await useAsyncData('homepage-posts', () =>
           :key="item.name"
           class="text*sm flex-shrink-0 text-gray-600 transition-colors hover:text-black dark:text-gray-300 dark:hover:text-white"
         >
-          <a
-            v-if="item.url.startsWith('http')"
-            :href="item.url"
-            target="_blank"
+          <NuxtLink
+            :to="item.url"
+            :external="item.url.startsWith('http')"
+            :target="item.url.startsWith('http') ? '_blank' : '_self'"
             rel="noopener noreferrer nofollow"
           >
             {{ item.name }}
-          </a>
-          <NuxtLink v-else :to="item.url">{{ item.name }}</NuxtLink>
+          </NuxtLink>
         </li>
       </ul>
     </footer>

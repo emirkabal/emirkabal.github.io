@@ -42,8 +42,18 @@ useSeoMeta({
     <div class="relative h-96 w-full">
       <smart-logo></smart-logo>
 
-      <div class="relative">
-        <h2 class="my-2 text-2xl font-bold sm:text-3xl">Storyline</h2>
+      <div class="relative mt-8">
+        <h2 class="my-2 flex items-center gap-2 text-2xl font-bold sm:text-3xl">
+          Storyline
+          <IconsSparkles
+            class="h-6 w-6 text-klue focus:outline-none"
+            v-tooltip="{
+              content: 'Something new and shiny!',
+              distance: 10,
+              trigger: 'hover'
+            }"
+          />
+        </h2>
         <p class="text-gray-600 dark:text-gray-300">
           At first glance, the logo presents a sleek, modern design. However,
           when rotated 90 degrees to the left, it reveals the hidden initials
@@ -51,7 +61,7 @@ useSeoMeta({
           simplicity and personal touch embedded in the design.
         </p>
 
-        <h2 class="mb-4 mt-16 text-2xl font-bold sm:text-3xl">Logo</h2>
+        <h2 class="mb-4 mt-12 text-2xl font-bold sm:text-3xl">Logo</h2>
         <div class="flex gap-2">
           <div class="w-full">
             <div
