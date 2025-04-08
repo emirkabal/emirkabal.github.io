@@ -17,7 +17,7 @@ defineProps<{
     "
     external
     target="_blank"
-    class="card"
+    class="group card"
   >
     <ProseImg
       class="aspect-video prose-img:rounded-xl prose-img:object-cover"

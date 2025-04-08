@@ -11,23 +11,23 @@ export const projects = [
   {
     title: "Kabal's Discord Bot",
     description:
-      'A discord bot that plays music and has many features and has over 100k servers.',
+      'A Discord bot that plays music and has many features and has over 100k servers.',
     images: ['projects/uxddh4cks4sklrg6jtou'],
     url: 'https://kabals.app'
   },
   {
     title: 'Masterscore',
     description:
-      'A website where you can rate movies and tv shows with a better rating system.',
+      'A website where you can rate movies and TV shows with a better rating system.',
     images: ['projects/s96czd9axf1afttwdtyd'],
     url: 'https://masterscore.org'
   },
   {
-    title: 'Better Instagram Videos',
+    title: 'Better Videos for Instagram',
     description:
-      'A extension that allows you to easily control the volume and playback of videos.',
+      'An extension that allows you to easily control the volume and playback of videos.',
     images: ['projects/nulbd69p1l49sbd6paz8'],
-    url: 'https://chromewebstore.google.com/detail/better-instagram-videos-p/ijgmchfimkocepiapjeoehcicfnhhchp'
+    url: 'https://chromewebstore.google.com/detail/ijgmchfimkocepiapjeoehcicfnhhchp'
   },
   {
     title: 'deprem-api',
