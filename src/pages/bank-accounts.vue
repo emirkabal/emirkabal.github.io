@@ -5,7 +5,7 @@ const accounts = [
   {
     name: 'Enpara',
     image: 'enpara',
-    iban: 'TR74 0011 1000 0000 0109 8322 76'
+    iban: 'TR20 0015 7000 0000 0109 8322 76'
   },
   {
     name: 'Türkiye İş Bankası',
